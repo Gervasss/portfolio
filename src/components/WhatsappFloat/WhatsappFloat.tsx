@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { IconBrandWhatsapp, IconSend, IconX } from "@tabler/icons-react";
+import { motion, } from "framer-motion";
 import styles from "./WhatsappFloat.module.css";
 
 type Props = {
@@ -87,7 +88,7 @@ export function WhatsAppFloat({
         >
           <div className={styles.header}>
             <div className={styles.profile}>
-                <img src="https://i.imgur.com/9ZIIxPJ.jpeg" alt={`Foto de ${name}`} className={styles.avatar} />
+              <img src="https://i.imgur.com/9ZIIxPJ.jpeg" alt={`Foto de ${name}`} className={styles.avatar} />
               <div className={styles.meta}>
                 <div className={styles.name}>{name}</div>
                 <div className={styles.status}>
@@ -159,6 +160,14 @@ export function WhatsAppFloat({
         aria-label={open ? "Fechar chat" : "Abrir chat"}
       >
         <span className={styles.pulse} aria-hidden="true" />
+        {/* Badge */}
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          className={styles.floatBadge}
+        >
+          !
+        </motion.div>
         <IconBrandWhatsapp size={38} />
       </button>
     </div>

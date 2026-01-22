@@ -9,6 +9,7 @@ import {
 } from "motion/react";
 
 import React, { useRef, useState } from "react";
+import { FaCode } from "react-icons/fa";
 
 
 interface NavbarProps {
@@ -120,7 +121,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
     <motion.div
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        "-ml-24 absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-7 text-sm font-semibold transition duration-200 lg:flex",
+        "-ml-2 absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-7 text-sm font-semibold transition duration-200 lg:flex",
         className,
       )}
     >
@@ -259,17 +260,17 @@ export const NavbarLogo = () => {
     bg-clip-text text-transparent
   "
         >
-          Gervásio
+        &lt;/&gt;
         </span>
 
         <span
           className="
     ml-1.5 text-2xl font-normal tracking-normal antialiased
-    bg-gradient-to-r from-[#22c55e] to-[#86efac]
+    bg-gradient-to-r from-[#22c55e] to-[#fff]
     bg-clip-text text-transparent
   "
         >
-          Cardoso
+         Gervásio Cardoso
         </span>
 
 

@@ -3,6 +3,7 @@
     overflow: hidden;
     padding: 120px 0;
     color: #eae6ff;
+    height: 100vh;
 }
 
 /* Backgrounds */
@@ -36,7 +37,7 @@
 /* Layout */
 .container {
     max-width: 1150px;
-    margin: 0 auto;
+    margin: 60 auto;
     padding: 0 24px;
     display: flex;
     gap: 40px;

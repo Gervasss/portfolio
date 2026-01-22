@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import { IconBrandGithub, IconBrandWhatsapp } from "@tabler/icons-react";
 import styles from "./HeroSection.module.css";
+import { TypingTitle } from "../TypingTitle/TypingTitle";
 
 export function HeroSection() {
   return (
@@ -23,7 +24,7 @@ export function HeroSection() {
           {/* Badge */}
           <div className={styles.badge}>
             <span className={styles.badgeDot} />
-            Full-Stack Developer 
+            Full-Stack Developer
           </div>
 
           {/* Fake HTML */}
@@ -39,12 +40,7 @@ export function HeroSection() {
             <div className={styles.tagLine}>
               <span className={styles.tagMuted}>&lt;h1&gt;</span>
             </div>
-
-            <h1 className={styles.title}>
-              <span className={styles.nameGradient}>Gervásio</span>{" "}
-              <span className={styles.lastName}>Cardoso</span>
-            </h1>
-
+            <TypingTitle text="Gervásio Cardoso" />
             <div className={styles.tagLine}>
               <span className={styles.tagMuted}>&lt;/h1&gt;</span>
             </div>
@@ -54,7 +50,7 @@ export function HeroSection() {
             </div>
 
             <p className={styles.description}>
-              Eu construo interfaces modernas e APIs robustas com foco em
+              Eu construo interfaces modernas e Aplicações robustas com foco em
               performance, DX e experiência do usuário. Projetos reais, código
               limpo e entrega rápida.
             </p>
@@ -126,7 +122,7 @@ export function HeroSection() {
             </div>
 
             <pre className={styles.codeBlock}>
-{`export const profile = {
+              {`export const profile = {
   name: "Gervásio Cardoso",
   role: "Full-Stack Developer",
   stack: ["React", "TypeScript", "Node.js"],

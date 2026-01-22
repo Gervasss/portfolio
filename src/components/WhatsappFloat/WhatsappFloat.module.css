@@ -40,6 +40,22 @@
   100% { transform: scale(1.15); opacity: 0; }
 }
 
+
+.floatBadge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 22px;
+  height: 22px;
+  border-radius: 9999px;
+  background: #ef4444;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 4px 10px rgba(239, 68, 68, .4);
+}
 /* ===== Panel ===== */
 .panel {
   position: absolute;

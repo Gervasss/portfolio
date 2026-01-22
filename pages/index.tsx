@@ -1,5 +1,7 @@
 
 
+import { AboutSection } from "@/src/components/About/AboutSection";
+import { ExperiencesSection } from "@/src/components/Experiences/ExpericencesSection";
 import { Header } from "@/src/components/Header/Header";
 import { HeroSection } from "@/src/components/Hero/HeroSection";
 import { WhatsAppFloat } from "@/src/components/WhatsappFloat/WhatsappFloat";
@@ -226,15 +228,18 @@ function HomePage() {
             {/* Conteúdo da página inicial */}
             <Header />
             <HeroSection />
+            <AboutSection/>
+            <ExperiencesSection/>
+             
            
 
 
             <WhatsAppFloat
-                phone="5599999999999"
+                phone="5573981542775"
                 name="Gervásio Cardoso"
                 avatarUrl="/avatar.jpg"
                 messagePrefix="Olá! Vi seu portfólio e "
-                welcomeMessage="Oi! Me diz o que você precisa e eu te respondo no WhatsApp 🙂"
+                welcomeMessage="Olá! Me diz o que você precisa e eu te respondo no WhatsApp 🙂"
             />
 
 
