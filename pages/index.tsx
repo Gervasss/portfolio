@@ -1,8 +1,10 @@
 
 
 import { AboutSection } from "@/src/components/About/AboutSection";
+import ContacSection from "@/src/components/Contact/ContactSection";
 import { EducationSection } from "@/src/components/Education/educationSection";
 import { ExperiencesSection } from "@/src/components/Experiences/ExpericencesSection";
+import FooterSection from "@/src/components/Footer/FooterSection";
 import { Header } from "@/src/components/Header/Header";
 import { HeroSection } from "@/src/components/Hero/HeroSection";
 import ProjectsSection from "@/src/components/Projects/ProjectsSection";
@@ -234,11 +236,8 @@ function HomePage() {
             <ExperiencesSection />
             <StacksSection/>
             <ProjectsSection/>
-
-
-
-
-
+            <ContacSection/>
+            <FooterSection/>
             <WhatsAppFloat
                 phone="5573981542775"
                 name="Gervásio Cardoso"
@@ -246,10 +245,6 @@ function HomePage() {
                 messagePrefix="Olá! Vi seu portfólio e "
                 welcomeMessage="Olá! Me diz o que você precisa e eu te respondo no WhatsApp 🙂"
             />
-
-
-
-
         </>
     )
 }

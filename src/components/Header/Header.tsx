@@ -34,7 +34,7 @@ export function Header() {
     }, []);
 
     const navItems = [
-        { name: "Início", link: "#inicio", icon: <Home className="h-4 w-4" /> },
+        { name: "Início", link: "#hero", icon: <Home className="h-4 w-4" /> },
         { name: "Sobre", link: "#about", icon: <UserCircle className="h-4 w-4" /> },
         { name: "Projetos", link: "#projects", icon: <Briefcase className="h-4 w-4" /> },
         { name: "Contato", link: "#contact", icon: <MessageSquare className="h-4 w-4" /> },

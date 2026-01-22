@@ -8,7 +8,7 @@ import { AboutSection } from "../About/AboutSection";
 
 export function HeroSection() {
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id="hero">
       {/* Background layers */}
       <div className={styles.bgBase} />
       <div className={styles.bgRadialTop} />

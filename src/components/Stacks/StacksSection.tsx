@@ -14,7 +14,7 @@ const stacks: StackItem[] = [
     { name: "TypeScript", iconUrl: "https://cdn.simpleicons.org/typescript/3178C6", },
     { name: "JavaScript", iconUrl: "https://cdn.simpleicons.org/javascript/F7DF1E", },
     { name: "HTML5", iconUrl: "https://cdn.simpleicons.org/html5/E34F26", },
-    { name: "CSS", iconUrl: "data:image/svg+xml;utf8,%3Csvg%20role%3D%22img%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3Ctitle%3ECSS3%3C%2Ftitle%3E%0A%20%20%3Cpath%20fill%3D%22%231572B6%22%20d%3D%22M1.5%200h21l-1.91%2021.563L12%2024l-8.59-2.437L1.5%200zm17.29%206.328l.196-2.203H6.214l.588%206.64h8.338l-.31%203.436L12%2014.805l-2.817-.604-.18-2.02H6.47l.314%203.515L12%2017.94l5.216-1.445.695-7.781H7.88l-.2-2.386h11.11z%22%3E%3C%2Fpath%3E%0A%3C%2Fsvg%3E%0A", },
+    { name: "CSS", iconUrl: "/CSS.svg", },
     { name: "Tailwind", iconUrl: "https://cdn.simpleicons.org/tailwindcss/06B6D4", },
     { name: "Node.js", iconUrl: "https://cdn.simpleicons.org/nodedotjs/339933", },
     { name: "Express", iconUrl: "https://cdn.simpleicons.org/express/FFFFFF", },
