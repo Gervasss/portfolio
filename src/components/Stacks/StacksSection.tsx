@@ -58,7 +58,7 @@ export default function StacksSection() {
                     {stacks.map((s) => (
                         <div key={s.name} className={styles.stackCard} role="listitem">
                             <div className={styles.stackTop}>
-                                <span className={styles.dot} style={{ background: s.color }} aria-hidden="true" />
+                                <span className={styles.dot}  aria-hidden="true" />
                                 <img
                                     src={s.iconUrl}
                                     alt={s.name}
