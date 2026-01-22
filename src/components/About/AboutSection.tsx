@@ -50,7 +50,7 @@ export function AboutSection() {
                 <p className={styles.role}>Desenvolvedor Full-Stack</p>
               </div>
 
-              <a className={styles.contactBtn} href="#contact">
+              <a className={styles.contactBtn} href="https://wa.me/5573981542775">
                 Entrar em contato
               </a>
             </div>
