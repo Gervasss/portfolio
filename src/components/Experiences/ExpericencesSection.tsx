@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import styles from "./ExperiencesSection.module.css";
+import { EducationSection } from "../Education/educationSection";
 
 type ExperienceItem = {
     range: string;
@@ -27,7 +28,7 @@ const EXPERIENCES: ExperienceItem[] = [
             "Otimização de sistemas para garantir melhor desempenho e usabilidade.",
             "Criação de sites e landing pages para empresas e profissionais, com foco em responsividade e nas melhores práticas de SEO.",
         ],
-        stack: ["Next.js", "React", "TypeScript", "Node.js", "PostgreSQL","Firebase","CSS Modules", "Styled Components"],
+        stack: ["Next.js", "React", "TypeScript", "Node.js", "PostgreSQL", "Firebase", "CSS Modules", "Styled Components"],
     },
     {
         range: "2023 — 2024",
@@ -40,15 +41,16 @@ const EXPERIENCES: ExperienceItem[] = [
             "Implementei um chat em tempo real via WebSocket com suporte a envio de imagens e arquivos.",
             "Otimizei a performance do sistema, reduzindo redundâncias com componentes reutilizáveis.",
             "Implementação de dashboards e fluxos críticos com foco em UX e métricas.",
-            
-    ],
-    stack: ["React", "TypeScript", "Vite", "CSS Modules", "Styled Components", "Websockets", "Postman" ,"Nodejs", "Firebase", "Prisma ORM","PostgrSQL"],
-  },
+
+        ],
+        stack: ["React", "TypeScript", "Vite", "CSS Modules", "Styled Components", "Websockets", "Postman", "Nodejs", "Firebase", "Prisma ORM", "PostgrSQL"],
+    },
 ];
 
 export function ExperiencesSection() {
     return (
         <section className={styles.section} id="experience">
+            <EducationSection />
             <div className={styles.container}>
                 <motion.div
                     initial={{ opacity: 0, y: 14 }}

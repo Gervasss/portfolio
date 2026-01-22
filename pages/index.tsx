@@ -1,9 +1,12 @@
 
 
 import { AboutSection } from "@/src/components/About/AboutSection";
+import { EducationSection } from "@/src/components/Education/educationSection";
 import { ExperiencesSection } from "@/src/components/Experiences/ExpericencesSection";
 import { Header } from "@/src/components/Header/Header";
 import { HeroSection } from "@/src/components/Hero/HeroSection";
+import ProjectsSection from "@/src/components/Projects/ProjectsSection";
+import StacksSection from "@/src/components/Stacks/StacksSection";
 import { WhatsAppFloat } from "@/src/components/WhatsappFloat/WhatsappFloat";
 import Head from "next/head";
 import Script from "next/script";
@@ -228,10 +231,12 @@ function HomePage() {
             {/* Conteúdo da página inicial */}
             <Header />
             <HeroSection />
-            <AboutSection/>
-            <ExperiencesSection/>
-             
-           
+            <ExperiencesSection />
+            <StacksSection/>
+            <ProjectsSection/>
+
+
+
 
 
             <WhatsAppFloat

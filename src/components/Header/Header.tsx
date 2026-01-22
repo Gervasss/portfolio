@@ -13,8 +13,8 @@ import {
     MobileNavMenu,
 } from "@/src/components/ui/resizable-navbar";
 import styles from "./Header.module.css";
-import { Briefcase, Home, MessageSquare, UserCircle, Zap } from "lucide-react";
-import { MdOutlineSmartphone } from "react-icons/md";
+import { Briefcase, Home, MessageSquare, UserCircle, } from "lucide-react";
+import { IoMdMailUnread } from "react-icons/io";
 
 export function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -62,8 +62,8 @@ export function Header() {
                             style={{ marginLeft: '' }}
                             className={`flex items-center gap-2 ${styles.phoneButton}`}
                         >
-                            <MdOutlineSmartphone size={20} />
-                            <span>(73) 98154-2775</span>
+                            <IoMdMailUnread size={20} />
+                            <span>gervasiocardoso10@gmail.com</span>
                         </NavbarButton>
 
                         {/* Botão de Orçamento - Link via Propriedade href */}

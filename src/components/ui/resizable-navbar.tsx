@@ -92,7 +92,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
         backgroundColor: visible ? "#12002e" : "rgba(0,0,0,0)",
         borderColor: visible ? "rgba(255,255,255,0.14)" : "rgba(255,255,255,0)",
         boxShadow: visible ? "0 14px 40px rgba(0,0,0,0.35)" : "none",
-        width: visible ? "54%" : "100%",
+        width: visible ? "80%" : "100%",
         y: visible ? 20 : 0,
       }}
       style={{

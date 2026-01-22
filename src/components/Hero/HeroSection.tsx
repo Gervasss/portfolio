@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import { IconBrandGithub, IconBrandWhatsapp } from "@tabler/icons-react";
 import styles from "./HeroSection.module.css";
 import { TypingTitle } from "../TypingTitle/TypingTitle";
+import { AboutSection } from "../About/AboutSection";
 
 export function HeroSection() {
   return (
@@ -143,6 +144,8 @@ export function HeroSection() {
           </div>
         </motion.div>
       </div>
+      <AboutSection />
     </section>
+
   );
 }
