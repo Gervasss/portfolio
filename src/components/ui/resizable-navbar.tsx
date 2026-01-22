@@ -266,7 +266,7 @@ export const NavbarLogo = () => {
         <span
           className="
     ml-1.5 text-2xl font-normal tracking-normal antialiased
-    bg-gradient-to-r from-[#22c55e] to-[#fff]
+    bg-gradient-to-r from-[#22c55e] to-[#22c55e]
     bg-clip-text text-transparent
   "
         >
