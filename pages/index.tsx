@@ -233,11 +233,12 @@ function HomePage() {
             {/* Conteúdo da página inicial */}
             <Header />
             <HeroSection />
+            <AboutSection />
             <ExperiencesSection />
-            <StacksSection/>
-            <ProjectsSection/>
-            <ContacSection/>
-            <FooterSection/>
+            <StacksSection />
+            <ProjectsSection />
+            <ContacSection />
+            <FooterSection />
             <WhatsAppFloat
                 phone="5573981542775"
                 name="Gervásio Cardoso"
