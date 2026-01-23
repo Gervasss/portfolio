@@ -66,6 +66,15 @@ const PROJECTS: Project[] = [
     github: "",
     tags: ["Next", "SEO", "UI", "Profissional", "IA otimizada"],
   },
+     {
+    title: "Movies DB",
+    description:
+      "O MovieDB é uma aplicação web desenvolvida com Next.js que permite ao usuário explorar um catálogo de filmes de forma intuitiva e visualmente atrativa. A plataforma consome dados de uma API pública de filmes para exibir informações como títulos, avaliações, gêneros e imagens promocionais,. ",
+    cover: "/movie.png",
+    href: "https://moviedb-sable.vercel.app/",
+    github: "https://github.com/Gervasss/moviedb",
+    tags: ["Next", "SEO", "UI", "Profissional", "IA otimizada", "Server Components",],
+  },
   
 ];
 
