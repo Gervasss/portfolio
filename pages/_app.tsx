@@ -12,6 +12,8 @@ const GradualBlur = dynamic(() => import('@/src/components/ui/GradualBlur'), {
 const theme = createTheme({}); // personalize se quiser
 
 export default function App({ Component, pageProps }: AppProps) {
+
+  
   return (
     <MantineProvider theme={theme} defaultColorScheme="auto">
       <Component {...pageProps} />

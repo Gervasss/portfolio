@@ -4,12 +4,13 @@ import { motion } from "motion/react";
 import { IconBrandGithub, IconBrandWhatsapp } from "@tabler/icons-react";
 import styles from "./HeroSection.module.css";
 import { TypingTitle } from "../TypingTitle/TypingTitle";
-import { AboutSection } from "../About/AboutSection";
+import { useLanguage } from "@/src/contexts/LanguageContext"; // Importação do Hook
 
 export function HeroSection() {
+  const { t } = useLanguage(); // Uso do Hook
+
   return (
     <section className={styles.hero} id="hero">
-      {/* Background layers */}
       <div className={styles.bgBase} />
       <div className={styles.bgRadialTop} />
       <div className={styles.bgRadialSide} />
@@ -25,7 +26,7 @@ export function HeroSection() {
           {/* Badge */}
           <div className={styles.badge}>
             <span className={styles.badgeDot} />
-            Full-Stack Developer
+            {t("Hero.badge")}
           </div>
 
           {/* Fake HTML */}
@@ -51,9 +52,7 @@ export function HeroSection() {
             </div>
 
             <p className={styles.description}>
-              Eu construo interfaces modernas e Aplicações robustas com foco em
-              performance, DX e experiência do usuário. Projetos reais, código
-              limpo e entrega rápida.
+              {t("Hero.description")}
             </p>
 
             <div className={styles.tagLine}>
@@ -78,7 +77,7 @@ export function HeroSection() {
               className={styles.githubBtn}
             >
               <IconBrandGithub size={18} />
-              Ver GitHub
+              {t("Hero.buttons.github")}
             </a>
 
             <a
@@ -88,11 +87,11 @@ export function HeroSection() {
               className={styles.whatsappBtn}
             >
               <IconBrandWhatsapp size={18} />
-              Falar no WhatsApp
+              {t("Hero.buttons.whatsapp")}
             </a>
 
             <a href="#projects" className={styles.secondaryBtn}>
-              Ver projetos <span className={styles.arrow}>→</span>
+              {t("Hero.buttons.projects")} <span className={styles.arrow}>→</span>
             </a>
           </div>
 
@@ -128,7 +127,7 @@ export function HeroSection() {
   role: "Full-Stack Developer",
   stack: ["React", "TypeScript", "Node.js"],
   focus: ["UI/UX", "Performance", "APIs"],
-  availability: "Open to work",
+  availability: "${t("Hero.code.availability")}",
 };`}
             </pre>
 
@@ -144,8 +143,6 @@ export function HeroSection() {
           </div>
         </motion.div>
       </div>
-    
     </section>
-
   );
 }

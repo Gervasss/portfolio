@@ -9,6 +9,32 @@ html {
 }
 
 
+/* 1. Remove a barra superior (iframe) */
+.goog-te-banner-frame, 
+.goog-te-banner, 
+.skiptranslate[style*="visibility: visible"] {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* 2. Força o site a ignorar o recuo de 40px que o Google injeta */
+body {
+    top: 0 !important;
+    position: static !important;
+}
+
+/* 3. Remove o widget flutuante e tooltips de tradução */
+#goog-gt-tt, 
+.goog-te-balloon-frame,
+#google_translate_element {
+    display: none !important;
+}
+
+.goog-text-highlight {
+    background: none !important;
+    box-shadow: none !important;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

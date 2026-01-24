@@ -1,26 +1,24 @@
+"use client";
+
 import { useEffect, useMemo, useRef, useState } from "react";
 import { IconBrandWhatsapp, IconSend, IconX } from "@tabler/icons-react";
-import { motion, } from "framer-motion";
+import { motion } from "framer-motion";
 import styles from "./WhatsappFloat.module.css";
+import { useLanguage } from "@/src/contexts/LanguageContext";
 
 type Props = {
-  phone: string;                 // "5599999999999"
-  name?: string;                 // "Gervásio"
-  avatarUrl?: string;            // "/avatar.jpg"
-  initialTypingMs?: number;      // tempo do (...) antes da msg aparecer
-  welcomeMessage?: string;       // msg após typing
-  messagePrefix?: string;        // texto que vai antes do texto digitado
-  placeholder?: string;          // placeholder do input
+  phone: string;
+  name?: string;
+  avatarUrl?: string;
+  initialTypingMs?: number;
 };
 
 export function WhatsAppFloat({
   phone,
   name = "Gervásio",
   initialTypingMs = 1200,
-  welcomeMessage = "Olá! Me manda uma mensagem por aqui que eu te respondo no WhatsApp 🙂",
-  messagePrefix = "Olá! Vi seu portfólio e ",
-  placeholder = "Digite sua mensagem…"
 }: Props) {
+  const { t } = useLanguage();
   const [open, setOpen] = useState(false);
   const [phase, setPhase] = useState<"typing" | "message">("typing");
   const [text, setText] = useState("");
@@ -29,20 +27,18 @@ export function WhatsAppFloat({
 
   const base = useMemo(() => `https://wa.me/${phone}?text=`, [phone]);
 
-  // Ao abrir: typing -> msg, e foca input
   useEffect(() => {
     if (!open) return;
 
     setPhase("typing");
-    const t = window.setTimeout(() => {
+    const tTimer = window.setTimeout(() => {
       setPhase("message");
       window.setTimeout(() => inputRef.current?.focus(), 50);
     }, initialTypingMs);
 
-    return () => window.clearTimeout(t);
+    return () => window.clearTimeout(tTimer);
   }, [open, initialTypingMs]);
 
-  // Fecha ao clicar fora
   useEffect(() => {
     function onMouseDown(e: MouseEvent) {
       if (!open) return;
@@ -53,7 +49,6 @@ export function WhatsAppFloat({
     return () => document.removeEventListener("mousedown", onMouseDown);
   }, [open]);
 
-  // Fecha no ESC
   useEffect(() => {
     function onKeyDown(e: KeyboardEvent) {
       if (e.key === "Escape") setOpen(false);
@@ -66,7 +61,7 @@ export function WhatsAppFloat({
     const userText = (customText ?? text).trim();
     if (!userText) return;
 
-    const finalMessage = `${messagePrefix}${userText}`;
+    const finalMessage = `${t("WhatsAppFloat.message_prefix")}${userText}`;
     const link = base + encodeURIComponent(finalMessage);
 
     window.open(link, "_blank", "noopener,noreferrer");
@@ -84,7 +79,7 @@ export function WhatsAppFloat({
           className={styles.panel}
           ref={panelRef}
           role="dialog"
-          aria-label="Chat do WhatsApp (simulação)"
+          aria-label="Chat do WhatsApp"
         >
           <div className={styles.header}>
             <div className={styles.profile}>
@@ -92,7 +87,7 @@ export function WhatsAppFloat({
               <div className={styles.meta}>
                 <div className={styles.name}>{name}</div>
                 <div className={styles.status}>
-                  {phase === "typing" ? "digitando..." : "online"}
+                  {phase === "typing" ? t("WhatsAppFloat.status_typing") : t("WhatsAppFloat.status_online")}
                 </div>
               </div>
             </div>
@@ -101,7 +96,7 @@ export function WhatsAppFloat({
               type="button"
               className={styles.close}
               onClick={() => setOpen(false)}
-              aria-label="Fechar"
+              aria-label={t("WhatsAppFloat.aria_label_close")}
             >
               <IconX size={18} />
             </button>
@@ -120,8 +115,8 @@ export function WhatsAppFloat({
 
             {phase === "message" && (
               <div className={`${styles.bubble} ${styles.incoming}`}>
-                {welcomeMessage}
-                <div className={styles.time}>agora</div>
+                {t("WhatsAppFloat.welcome_message")}
+                <div className={styles.time}>{t("WhatsAppFloat.time_now")}</div>
               </div>
             )}
           </div>
@@ -132,23 +127,23 @@ export function WhatsAppFloat({
               className={styles.input}
               value={text}
               onChange={(e) => setText(e.target.value)}
-              placeholder={placeholder}
+              placeholder={t("WhatsAppFloat.placeholder")}
               aria-label="Mensagem"
             />
 
             <button
               type="submit"
               className={styles.send}
-              aria-label="Enviar no WhatsApp"
+              aria-label={t("WhatsAppFloat.aria_label_send")}
               disabled={!text.trim()}
-              title={!text.trim() ? "Digite uma mensagem" : "Enviar"}
+              title={!text.trim() ? t("WhatsAppFloat.title_disabled") : t("WhatsAppFloat.title_send")}
             >
               <IconSend size={18} />
             </button>
           </form>
 
           <div className={styles.footerHint}>
-            Ao enviar, abrimos o WhatsApp com sua mensagem pronta.
+            {t("WhatsAppFloat.footer_hint")}
           </div>
         </div>
       )}
@@ -160,7 +155,6 @@ export function WhatsAppFloat({
         aria-label={open ? "Fechar chat" : "Abrir chat"}
       >
         <span className={styles.pulse} aria-hidden="true" />
-        {/* Badge */}
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}

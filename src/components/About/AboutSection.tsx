@@ -3,10 +3,13 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import styles from "./AboutSection.module.css";
+import { useLanguage } from "@/src/contexts/LanguageContext"; // Importação necessária
 
 const STACK = ["React", "Next.js", "TypeScript", "Node.js", "PostgreSQL", "Prisma", "Firebase", "CSS"];
 
 export function AboutSection() {
+  const { t } = useLanguage();
+
   return (
     <section className={styles.section} id="about">
       <div className={styles.container}>
@@ -19,12 +22,10 @@ export function AboutSection() {
         >
            <div className={styles.badge}>
             <span className={styles.badgeDot} />
-            Sobre mim
+            {t("About.badge")}
           </div>
-          <h2 className={styles.title}>Quem eu sou e como eu trabalho</h2>
-          <p className={styles.subtitle}>
-            Uma visão rápida do meu perfil como desenvolvedor, meu foco técnico e o tipo de produto que eu gosto de construir.
-          </p>
+          <h2 className={styles.title}>{t("About.title")}</h2>
+          <p className={styles.subtitle}>{t("About.subtitle")}</p>
         </motion.div>
 
         <div className={styles.grid}>
@@ -47,11 +48,11 @@ export function AboutSection() {
             <div className={styles.photoMeta}>
               <div>
                 <p className={styles.name}>Gervásio Cardoso</p>
-                <p className={styles.role}>Desenvolvedor Full-Stack</p>
+                <p className={styles.role}>{t("About.role")}</p>
               </div>
 
               <a className={styles.contactBtn} href="https://wa.me/5573981542775">
-                Entrar em contato
+                {t("About.contact")}
               </a>
             </div>
           </motion.div>
@@ -65,37 +66,36 @@ export function AboutSection() {
             className={styles.content}
           >
             <div className={styles.card}>
-              <p className={styles.paragraph}>
-                Eu desenvolvo aplicações com foco em <strong>experiência do usuário</strong>,{" "}
-                <strong>performance</strong> e <strong>código sustentável</strong>. Gosto de pegar um problema real
-                e transformar em um produto com interface moderna e backend robusto.
-              </p>
+              <p 
+                className={styles.paragraph}
+                dangerouslySetInnerHTML={{ __html: t("About.p1") }}
+              />
 
-              <p className={styles.paragraph}>
-                Atuo do <strong>front ao back</strong>: construindo telas, organizando componentes, integrando APIs,
-                modelando banco e garantindo entregas bem definidas.
-              </p>
+              <p 
+                className={styles.paragraph} 
+                dangerouslySetInnerHTML={{ __html: t("About.p2") }}
+              />
 
               <div className={styles.highlights}>
                 <div className={styles.highlight}>
-                  <p className={styles.highlightTitle}>O que eu entrego</p>
-                  <p className={styles.highlightText}>Interfaces responsivas, integrações sólidas e dashboards claros.</p>
+                  <p className={styles.highlightTitle}>{t("About.highlights.deliver.title")}</p>
+                  <p className={styles.highlightText}>{t("About.highlights.deliver.text")}</p>
                 </div>
 
                 <div className={styles.highlight}>
-                  <p className={styles.highlightTitle}>Como eu trabalho</p>
-                  <p className={styles.highlightText}>Organização, versionamento, comunicação e foco em resultado.</p>
+                  <p className={styles.highlightTitle}>{t("About.highlights.work.title")}</p>
+                  <p className={styles.highlightText}>{t("About.highlights.work.text")}</p>
                 </div>
 
                 <div className={styles.highlight}>
-                  <p className={styles.highlightTitle}>O que eu busco</p>
-                  <p className={styles.highlightText}>Projetos reais, produto bem pensado e impacto mensurável.</p>
+                  <p className={styles.highlightTitle}>{t("About.highlights.seek.title")}</p>
+                  <p className={styles.highlightText}>{t("About.highlights.seek.text")}</p>
                 </div>
               </div>
             </div>
 
             <div className={styles.stackBlock}>
-              <p className={styles.stackTitle}>Stack principal</p>
+              <p className={styles.stackTitle}>{t("About.stack_title")}</p>
               <div className={styles.stack}>
                 {STACK.map((t) => (
                   <span key={t} className={styles.chip}>

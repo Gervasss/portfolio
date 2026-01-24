@@ -15,14 +15,18 @@ import {
 import styles from "./Header.module.css";
 import { Briefcase, Home, MessageSquare, UserCircle, } from "lucide-react";
 import { IoMdMailUnread } from "react-icons/io";
+import { LanguageSelector } from "../LanguageSelector/LanguageSelector";
+import { useLanguage } from "@/src/contexts/LanguageContext"; // 1. Importação necessária
 
 export function Header() {
+    const { t } = useLanguage(); // 2. Hook de tradução
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
     // Configuração do WhatsApp para RB Engenharia
     const phoneNumber = "5577981337664";
-    const message = "Olá! Gostaria de solicitar um orçamento gratuito para energia solar com a RB Engenharia.";
+    // 3. Mensagem traduzida automaticamente via JSON
+    const message = t("Header.whatsapp_message"); 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
     useEffect(() => {
@@ -33,11 +37,12 @@ export function Header() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    // 4. Nomes dos itens usando a função t()
     const navItems = [
-        { name: "Início", link: "#hero", icon: <Home className="h-4 w-4" /> },
-        { name: "Sobre", link: "#about", icon: <UserCircle className="h-4 w-4" /> },
-        { name: "Projetos", link: "#projects", icon: <Briefcase className="h-4 w-4" /> },
-        { name: "Contato", link: "#contact", icon: <MessageSquare className="h-4 w-4" /> },
+        { name: t("Header.nav.home"), link: "#hero", icon: <Home className="h-4 w-4" /> },
+        { name: t("Header.nav.about"), link: "#about", icon: <UserCircle className="h-4 w-4" /> },
+        { name: t("Header.nav.projects"), link: "#projects", icon: <Briefcase className="h-4 w-4" /> },
+        { name: t("Header.nav.contact"), link: "#contact", icon: <MessageSquare className="h-4 w-4" /> },
     ];
 
     return (
@@ -62,8 +67,7 @@ export function Header() {
                             style={{ marginLeft: '' }}
                             className={`flex items-center gap-2 ${styles.phoneButton}`}
                         >
-                            <IoMdMailUnread size={20} />
-                            <span>gervasiocardoso10@gmail.com</span>
+                           <LanguageSelector />
                         </NavbarButton>
 
                         {/* Botão de Orçamento - Link via Propriedade href */}
@@ -74,7 +78,8 @@ export function Header() {
                             rel="noopener noreferrer"
                             className={styles.ctaButton}
                         >
-                           Contate me
+                            {/* 5. Texto traduzido */}
+                            {t("Header.buttons.contact_me")}
                         </NavbarButton>
                     </div>
                 </NavBody>
@@ -96,6 +101,7 @@ export function Header() {
 
                     >
                         <div className={styles.mobileLinks}>
+                              <div style={{marginLeft:"10px"}}><LanguageSelector/></div>
                             {navItems.map((item, idx) => (
                                 <a
                                     key={`mobile-link-${idx}`}
@@ -116,9 +122,11 @@ export function Header() {
                                 rel="noopener noreferrer"
                                 className={`${styles.orçamento} w-full`}
                             >
-                               Fale comigo
+                                {/* 6. Texto traduzido */}
+                                {t("Header.buttons.talk_to_me")}
                             </NavbarButton>
                         </div>
+                       
                     </MobileNavMenu>
                 </MobileNav>
             </Navbar>

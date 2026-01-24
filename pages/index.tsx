@@ -10,6 +10,7 @@ import { HeroSection } from "@/src/components/Hero/HeroSection";
 import ProjectsSection from "@/src/components/Projects/ProjectsSection";
 import StacksSection from "@/src/components/Stacks/StacksSection";
 import { WhatsAppFloat } from "@/src/components/WhatsappFloat/WhatsappFloat";
+import { LanguageProvider } from "@/src/contexts/LanguageContext";
 import Head from "next/head";
 import Script from "next/script";
 
@@ -231,21 +232,24 @@ function HomePage() {
             />
 
             {/* Conteúdo da página inicial */}
-            <Header />
-            <HeroSection />
-            <AboutSection />
-            <ExperiencesSection />
-            <StacksSection />
-            <ProjectsSection />
-            <ContacSection />
-            <FooterSection />
-            <WhatsAppFloat
-                phone="5573981542775"
-                name="Gervásio Cardoso"
-                avatarUrl="/avatar.jpg"
-                messagePrefix="Olá! Vi seu portfólio e "
-                welcomeMessage="Olá! Me diz o que você precisa e eu te respondo no WhatsApp 🙂"
-            />
+            <LanguageProvider>
+                <Header />
+                <HeroSection />
+                <AboutSection />
+                <ExperiencesSection />
+                <StacksSection />
+                <ProjectsSection />
+                <ContacSection />
+                <FooterSection />
+                <WhatsAppFloat
+                    phone="5573981542775"
+                    name="Gervásio Cardoso"
+                    avatarUrl="/avatar.jpg"
+                    messagePrefix="Olá! Vi seu portfólio e "
+                    welcomeMessage="Olá! Me diz o que você precisa e eu te respondo no WhatsApp 🙂"
+                />
+            </LanguageProvider>
+
         </>
     )
 }

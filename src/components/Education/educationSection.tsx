@@ -2,32 +2,23 @@
 
 import { motion } from "motion/react";
 import styles from "./EducationSection.module.css";
-
-type EducationItem = {
-    period: string;
-    degree: string;
-    institution: string;
-    description?: string;
-    location?:string;
-    status?: string;
-};
-
-const EDUCATION: EducationItem[] = [
-
-    {
-        period: "2019 — Atual",
-        degree: "Bacharelado em Ciência da Computação",
-        institution: "Universidade Estadual do Sudoeste da Bahia (UESB)",
-        status: "Em andamento",
-        location: "Vitória da Conquista • Bahia",
-        description:
-            "Ênfase em desenvolvimento de software, estruturas de dados, bancos de dados e arquitetura de sistemas.",
-       
-
-    },
-];
+import { useLanguage } from "@/src/contexts/LanguageContext";
 
 export function EducationSection() {
+    const { t } = useLanguage();
+
+    
+    const EDUCATION = [
+        {
+            period: t("Education.items.uesb.period"),
+            degree: t("Education.items.uesb.degree"),
+            institution: "Universidade Estadual do Sudoeste da Bahia (UESB)",
+            status: t("Education.items.uesb.status"),
+            location: t("Education.items.uesb.location"),
+            description: t("Education.items.uesb.description"),
+        },
+    ];
+
     return (
         <section className={styles.section} id="education">
             <div className={styles.container}>
@@ -40,11 +31,11 @@ export function EducationSection() {
                 >
                     <div className={styles.badge}>
                         <span className={styles.badgeDot} />
-                        Formação
+                        {t("Education.badge")}
                     </div>
-                    <h2 className={styles.title}>Formação acadêmica</h2>
+                    <h2 className={styles.title}>{t("Education.title")}</h2>
                     <p className={styles.subtitle}>
-                        Minha base acadêmica e técnica que sustenta minha atuação como desenvolvedor.
+                        {t("Education.subtitle")}
                     </p>
                 </motion.header>
 
@@ -53,7 +44,7 @@ export function EducationSection() {
 
                     {EDUCATION.map((edu, index) => (
                         <motion.article
-                            key={edu.degree}
+                            key={index} // Use index ou uma chave única traduzida
                             initial={{ opacity: 0, y: 16 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-80px" }}

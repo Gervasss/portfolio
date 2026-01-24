@@ -1,0 +1,198 @@
+{
+  "Header": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "buttons": {
+      "contact_me": "Contact me",
+      "talk_to_me": "Talk to me"
+    },
+    "whatsapp_message": "Hello! I would like to request a free quote for solar energy with RB Engenharia."
+  },
+  
+  "Hero": {
+    "badge": "Full-Stack Developer",
+    "description": "I build modern interfaces and robust applications with a focus on performance, DX, and user experience. Real projects, clean code, and fast delivery.",
+    "buttons": {
+      "github": "View GitHub",
+      "whatsapp": "Talk on WhatsApp",
+      "projects": "View projects"
+    },
+    "code": {
+      "availability": "Open to work"
+    }
+  
+},
+  "About": {
+    "badge": "About me",
+    "title": "Who I am and how I work",
+    "subtitle": "A quick overview of my developer profile, technical focus, and the kind of product I enjoy building.",
+    "role": "Full-Stack Developer",
+    "contact": "Get in touch",
+    "p1": "I develop applications focused on <strong>user experience</strong>, <strong>performance</strong>, and <strong>sustainable code</strong>. I enjoy taking a real problem and turning it into a product with a modern interface and robust backend.",
+    "p2": "I work from <strong>front to back</strong>: building screens, organizing components, integrating APIs, modeling databases, and ensuring well-defined deliveries.",
+    "highlights": {
+      "deliver": { "title": "What I deliver", "text": "Responsive interfaces, solid integrations, and clear dashboards." },
+      "work": { "title": "How I work", "text": "Organization, versioning, communication, and result-oriented." },
+      "seek": { "title": "What I seek", "text": "Real projects, well-thought-out products, and measurable impact." }
+    },
+    "stack_title": "Main stack"
+  },
+  
+  "About": {
+    "badge": "About me",
+    "title": "Who I am and how I work",
+    "subtitle": "A quick overview of my developer profile, technical focus, and the kind of product I enjoy building.",
+    "role": "Full-Stack Developer",
+    "contact": "Get in touch",
+    "p1": "I develop applications focused on <strong>user experience</strong>, <strong>performance</strong>, and <strong>sustainable code</strong>. I enjoy taking a real problem and turning it into a product with a modern interface and robust backend.",
+    "p2": "I work from <strong>front to back</strong>: building screens, organizing components, integrating APIs, modeling databases, and ensuring well-defined deliveries.",
+    "highlights": {
+      "deliver": { "title": "What I deliver", "text": "Responsive interfaces, solid integrations, and clear dashboards." },
+      "work": { "title": "How I work", "text": "Organization, versioning, communication, and result-oriented." },
+      "seek": { "title": "What I seek", "text": "Real projects, well-thought-out products, and measurable impact." }
+    },
+    "stack_title": "Main stack"
+  },
+  "Education": {
+    "badge": "Education",
+    "title": "Academic Background",
+    "subtitle": "My academic and technical foundation that supports my work as a developer.",
+    "items": {
+      "uesb": {
+        "period": "2019 — Present",
+        "degree": "Bachelor of Computer Science",
+        "status": "In progress",
+        "location": "Vitória da Conquista • Bahia",
+        "description": "Emphasis on software development, data structures, databases, and systems architecture."
+      }
+    }
+  },
+  "Experience": {
+  "badge": "Experience",
+  "title": "Professional Experience",
+  "subtitle": "A summary of what I've built and how I operate day-to-day, from product to delivery.",
+  "items": {
+    "freelance": {
+      "range": "2025 — Present",
+      "role": "Full-Stack Developer",
+      "location": "Remote • Brazil",
+      "highlights": [
+        "Development of custom ERPs and Stand-alone systems for companies.",
+        "Creation of business management solutions with database integration and interactive dashboards.",
+        "Implementation of dashboards and critical flows focused on UX and metrics.",
+        "System optimization to ensure better performance and usability.",
+        "Creation of websites and landing pages for companies and professionals, focusing on responsiveness and SEO best practices."
+      ]
+    },
+    "mercadotica": {
+      "range": "2023 — 2024",
+      "role": "Full-Stack Developer Intern",
+      "location": "Remote • Brazil",
+      "highlights": [
+        "Developed and maintained responsive web applications using React.js, Next.js, and TypeScript, ensuring scalability.",
+        "Worked on the backend with Node.js, Prisma, and Postman for API integration.",
+        "Implemented a real-time chat via WebSocket with support for sending images and files.",
+        "Optimized system performance, reducing redundancies with reusable components.",
+        "Implementation of dashboards and critical flows focused on UX and metrics."
+      ]
+    }
+  }
+},
+"Stacks": {
+  "badge": "Stacks",
+  "title": "Technologies I use",
+  "subtitle": "Tools and technologies that are part of my daily development workflow.",
+  "subtitles": {
+    "versioning": "Versioning",
+    "deploy": "Deploy",
+    "cloud": "Cloud VPS"
+  }
+},
+"Projects": {
+  "badge": "Projects",
+  "title": "Featured Projects",
+  "subtitle": "A selection of what I've been building — focus on product, performance, and user experience.",
+  "buttons": {
+    "view_live": "View live site",
+    "github": "GitHub"
+  },
+  "items": {
+    "pousada": "Dashboard for managing reservations, consumption, and inventory. Focus on UX, performance, and operational flow.",
+    "admin_jg": "Management Dashboard for clients, suppliers, sales, expenses, documents, and stock. Focus on UX, performance, and operational flow.",
+    "intranet": "Platform for employees to receive company files, news, and direct chat support.",
+    "mbv": "Web platform designed to help clients choose the most suitable ophthalmic lens based on visual habits and medical prescription.",
+    "blog": "Company news portal for announcements of new franchisees, promotions, and advertising campaigns.",
+    "psicologa": "Clearly presents the professional's skills, services, and educational background for clients.",
+    "movies": "Film catalog explorer using a public API with an intuitive interface and attractive visual design."
+  }
+},
+"Contact": {
+  "badge": "Contact",
+  "title": "Get in Touch",
+  "subtitle": "Send a message directly via WhatsApp",
+  "form": {
+    "name": "Name",
+    "name_placeholder": "Enter your name",
+    "email": "Email",
+    "email_placeholder": "Enter your email",
+    "message": "Message",
+    "message_placeholder": "Enter your message",
+    "button": "Send on WhatsApp",
+    "button_submitting": "Opening...",
+    "success": "WhatsApp opened with your message"
+  },
+  "errors": {
+    "name": "Please enter your name.",
+    "email": "Please enter your email.",
+    "message_empty": "Please enter your message.",
+    "message_short": "Message too short (minimum 10 characters)."
+  },
+  "side": {
+    "title": "Connect with me",
+    "location": "Location"
+  },
+  "whatsapp_template": "📩 *New portfolio contact*\n\n👤 *Name:* {name}\n📧 *Email:* {email}\n\n💬 *Message:*\n{message}"
+},
+"Footer": {
+  "description": "Computer Science student at UESB with experience in the IT market. I work in Web Development, contributing to production projects in both front-end and back-end.",
+  "titles": {
+    "quick_links": "Quick Links",
+    "services": "Services",
+    "focus": "Focus"
+  },
+  "links": {
+    "home": "Home",
+    "education": "Education",
+    "experience": "Experience",
+    "projects": "Projects",
+    "stacks": "Stacks",
+    "contact": "Contact",
+    "landing_pages": "Landing Pages",
+    "websites": "Websites",
+    "erps": "ERPs",
+    "frontend": "Front-End",
+    "backend": "Back-End"
+  },
+  "copyright": "© 2025 @Gervásio Cardoso. All rights reserved."
+},
+"WhatsAppFloat": {
+  "status_typing": "typing...",
+  "status_online": "online",
+  "welcome_message": "Hi! Send me a message here and I'll get back to you on WhatsApp 🙂",
+  "message_prefix": "Hi! I saw your portfolio and ",
+  "placeholder": "Type your message…",
+  "footer_hint": "When sending, we open WhatsApp with your message ready.",
+  "time_now": "now",
+  "aria_label_close": "Close",
+  "aria_label_send": "Send on WhatsApp",
+  "title_send": "Send",
+  "title_disabled": "Type a message"
+}
+
+
+
+}

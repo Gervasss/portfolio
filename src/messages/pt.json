@@ -1,0 +1,182 @@
+{
+  "Header": {
+    "nav": {
+      "home": "Início",
+      "about": "Sobre",
+      "projects": "Projetos",
+      "contact": "Contato"
+    },
+    "buttons": {
+      "contact_me": "Contate me",
+      "talk_to_me": "Fale comigo"
+    },
+    "whatsapp_message": "Olá! Gostaria de solicitar um orçamento gratuito para energia solar com a RB Engenharia."
+  },
+  "Hero": {
+    "badge": "Desenvolvedor Full-Stack",
+    "description": "Eu construo interfaces modernas e Aplicações robustas com foco em performance, DX e experiência do usuário. Projetos reais, código limpo e entrega rápida.",
+    "buttons": {
+      "github": "Ver GitHub",
+      "whatsapp": "Falar no WhatsApp",
+      "projects": "Ver projetos"
+    },
+    "code": {
+      "availability": "Disponível para trabalho"
+    }
+  },
+  "About": {
+    "badge": "Sobre mim",
+    "title": "Quem eu sou e como eu trabalho",
+    "subtitle": "Uma visão rápida do meu perfil como desenvolvedor, meu foco técnico e o tipo de produto que eu gosto de construir.",
+    "role": "Desenvolvedor Full-Stack",
+    "contact": "Entrar em contato",
+    "p1": "Eu desenvolvo aplicações com foco em <strong>experiência do usuário</strong>, <strong>performance</strong> e <strong>código sustentável</strong>. Gosto de pegar um problema real e transformar em um produto com interface moderna e backend robusto.",
+    "p2": "Atuo do <strong>front ao back</strong>: construindo telas, organizando componentes, integrando APIs, modelando banco e garantindo entregas bem definidas.",
+    "highlights": {
+      "deliver": { "title": "O que eu entrego", "text": "Interfaces responsivas, integrações sólidas e dashboards claros." },
+      "work": { "title": "Como eu trabalho", "text": "Organização, versionamento, comunicação e foco em resultado." },
+      "seek": { "title": "O que eu busco", "text": "Projetos reais, produto bem pensado e impacto mensurável." }
+    },
+    "stack_title": "Stack principal"
+  },
+ 
+  "Education": {
+    "badge": "Formação",
+    "title": "Formação acadêmica",
+    "subtitle": "Minha base acadêmica e técnica que sustenta minha atuação como desenvolvedor.",
+    "items": {
+      "uesb": {
+        "period": "2019 — Atual",
+        "degree": "Bacharelado em Ciência da Computação",
+        "status": "Em andamento",
+        "location": "Vitória da Conquista • Bahia",
+        "description": "Ênfase em desenvolvimento de software, estruturas de dados, bancos de dados e arquitetura de sistemas."
+      }
+    }
+  
+},
+"Experience": {
+  "badge": "Experiência",
+  "title": "Experiência profissional",
+  "subtitle": "Um resumo do que eu já construí e como eu atuo no dia a dia, do produto à entrega.",
+  "items": {
+    "freelance": {
+      "range": "2025 — Atual",
+      "role": "Desenvolvedor Full-Stack",
+      "location": "Remoto • Brasil",
+      "highlights": [
+        "Desenvolvimento de ERPs e sistemas Stand-alone personalizados para empresas.",
+        "Criação de soluções de gestão empresarial com integração de banco de dados e dashboards interativos.",
+        "Implementação de dashboards e fluxos críticos com foco em UX e métricas.",
+        "Otimização de sistemas para garantir melhor desempenho e usabilidade.",
+        "Criação de sites e landing pages para empresas e profissionais, com foco em responsividade e nas melhores práticas de SEO."
+      ]
+    },
+    "mercadotica": {
+      "range": "2023 — 2024",
+      "role": "Estagiário - Desenvolvedor Full-Stack",
+      "location": "Remoto • Brasil",
+      "highlights": [
+        "Desenvolvi e mantive aplicações web responsivas utilizando React.js, Next.js e TypeScript, garantindo maior escalabilidade.",
+        "Trabalhei no backend com Node.js, Prisma e Postman para integração de APIs.",
+        "Implementei um chat em tempo real via WebSocket com suporte a envio de imagens e arquivos.",
+        "Otimizei a performance do sistema, reduzindo redundâncias com componentes reutilizáveis.",
+        "Implementação de dashboards e fluxos críticos com foco em UX e métricas."
+      ]
+    }
+  }
+},
+"Stacks": {
+  "badge": "Stacks",
+  "title": "Tecnologias que utilizo",
+  "subtitle": "Ferramentas e tecnologias que fazem parte do meu fluxo diário de desenvolvimento.",
+  "subtitles": {
+    "versioning": "Versionamento",
+    "deploy": "Deploy",
+    "cloud": "Cloud VPS"
+  }
+},
+"Projects": {
+  "badge": "Projetos",
+  "title": "Projetos em destaque",
+  "subtitle": "Uma seleção do que venho construindo — foco em produto, performance e experiência do usuário.",
+  "buttons": {
+    "view_live": "Ver site funcionando",
+    "github": "GitHub"
+  },
+  "items": {
+    "pousada": "Painel para gestão de reservas, consumo e inventário. Foco em UX, performance e fluxo operacional.",
+    "admin_jg": "Painel de Gestão de Clientes, fornecedores, vendas, gastos, documentos, estoque. Foco em UX, performance e fluxo operacional.",
+    "intranet": "Plataforma para colaboradores receberem arquivos, notícias e suporte via chat direto.",
+    "mbv": "Plataforma para auxiliar clientes na escolha da lente oftálmica ideal baseada em hábitos visuais e prescrição médica.",
+    "blog": "Divulgação de notícias, novos franqueados, promoções e campanhas publicitárias da empresa.",
+    "psicologa": "Apresenta claramente as competências, serviços e formações da profissional para os clientes.",
+    "movies": "Exploração de catálogo de filmes consumindo API pública com interface intuitiva e visual atrativo."
+  }
+},
+"Contact": {
+  "badge": "Contato",
+  "title": "Entre em Contato",
+  "subtitle": "Envie uma mensagem diretamente pelo WhatsApp",
+  "form": {
+    "name": "Nome",
+    "name_placeholder": "Digite seu nome",
+    "email": "Email",
+    "email_placeholder": "Digite seu email",
+    "message": "Mensagem",
+    "message_placeholder": "Digite sua mensagem",
+    "button": "Enviar no WhatsApp",
+    "button_submitting": "Abrindo...",
+    "success": "WhatsApp aberto com sua mensagem"
+  },
+  "errors": {
+    "name": "Informe seu nome.",
+    "email": "Informe seu email.",
+    "message_empty": "Digite sua mensagem.",
+    "message_short": "Mensagem muito curta (mínimo 10 caracteres)."
+  },
+  "side": {
+    "title": "Conecte-se comigo",
+    "location": "Localização"
+  },
+  "whatsapp_template": "📩 *Novo contato pelo portfólio*\n\n👤 *Nome:* {name}\n📧 *Email:* {email}\n\n💬 *Mensagem:*\n{message}"
+},
+"Footer": {
+  "description": "Acadêmico de Ciência da Computação na UESB, com experiência no mercado de TI. Atuo no Desenvolvimento Web, contribuindo para projetos em produção, tanto no front-end quanto no Back-end.",
+  "titles": {
+    "quick_links": "Links Rápidos",
+    "services": "Serviços",
+    "focus": "Atuação"
+  },
+  "links": {
+    "home": "Início",
+    "education": "Formação",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "stacks": "Stacks",
+    "contact": "Contato",
+    "landing_pages": "Landing Pages",
+    "websites": "Sites",
+    "erps": "ERPs",
+    "frontend": "Front-End",
+    "backend": "Back-End"
+  },
+  "copyright": "© 2025 @Gervásio Cardoso. Todos os direitos reservados."
+},
+"WhatsAppFloat": {
+  "status_typing": "digitando...",
+  "status_online": "online",
+  "welcome_message": "Olá! Me manda uma mensagem por aqui que eu te respondo no WhatsApp 🙂",
+  "message_prefix": "Olá! Vi seu portfólio e ",
+  "placeholder": "Digite sua mensagem…",
+  "footer_hint": "Ao enviar, abrimos o WhatsApp com sua mensagem pronta.",
+  "time_now": "agora",
+  "aria_label_close": "Fechar",
+  "aria_label_send": "Enviar no WhatsApp",
+  "title_send": "Enviar",
+  "title_disabled": "Digite uma mensagem"
+}
+
+
+}
+
