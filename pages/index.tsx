@@ -245,8 +245,6 @@ function HomePage() {
                     phone="5573981542775"
                     name="Gervásio Cardoso"
                     avatarUrl="/avatar.jpg"
-                    messagePrefix="Olá! Vi seu portfólio e "
-                    welcomeMessage="Olá! Me diz o que você precisa e eu te respondo no WhatsApp 🙂"
                 />
             </LanguageProvider>
 
