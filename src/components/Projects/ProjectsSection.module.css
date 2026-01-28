@@ -87,13 +87,15 @@
 }
 
 .coverWrap {
+  width: 100%;       /* Ou uma largura fixa, ex: 300px */
+  height: 200px;
   position: relative;
   aspect-ratio: 16 / 9;
   overflow: hidden;
 }
 
 .cover {
- 
+ object-position: center;
   width: 100%;
   height: 100%;
   object-fit: cover;
