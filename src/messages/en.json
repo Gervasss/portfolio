@@ -31,7 +31,7 @@
     "title": "Who I am and how I work",
     "subtitle": "A quick overview of my developer profile, technical focus, and the kind of product I enjoy building.",
     "role": "Full-Stack Developer",
-    "contact": "Get in touch",
+    "cv": "Download CV",
     "p1": "I develop applications focused on <strong>user experience</strong>, <strong>performance</strong>, and <strong>sustainable code</strong>. I enjoy taking a real problem and turning it into a product with a modern interface and robust backend.",
     "p2": "I work from <strong>front to back</strong>: building screens, organizing components, integrating APIs, modeling databases, and ensuring well-defined deliveries.",
     "highlights": {
@@ -42,21 +42,7 @@
     "stack_title": "Main stack"
   },
   
-  "About": {
-    "badge": "About me",
-    "title": "Who I am and how I work",
-    "subtitle": "A quick overview of my developer profile, technical focus, and the kind of product I enjoy building.",
-    "role": "Full-Stack Developer",
-    "contact": "Get in touch",
-    "p1": "I develop applications focused on <strong>user experience</strong>, <strong>performance</strong>, and <strong>sustainable code</strong>. I enjoy taking a real problem and turning it into a product with a modern interface and robust backend.",
-    "p2": "I work from <strong>front to back</strong>: building screens, organizing components, integrating APIs, modeling databases, and ensuring well-defined deliveries.",
-    "highlights": {
-      "deliver": { "title": "What I deliver", "text": "Responsive interfaces, solid integrations, and clear dashboards." },
-      "work": { "title": "How I work", "text": "Organization, versioning, communication, and result-oriented." },
-      "seek": { "title": "What I seek", "text": "Real projects, well-thought-out products, and measurable impact." }
-    },
-    "stack_title": "Main stack"
-  },
+
   "Education": {
     "badge": "Education",
     "title": "Academic Background",

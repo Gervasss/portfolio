@@ -45,14 +45,17 @@ export function AboutSection() {
               />
             </div>
 
-            <div className={styles.photoMeta}>
+           <div className={styles.photoMeta}>
               <div>
                 <p className={styles.name}>Gervásio Cardoso</p>
                 <p className={styles.role}>{t("About.role")}</p>
               </div>
-
-              <a className={styles.contactBtn} href="https://wa.me/5573981542775">
-                {t("About.contact")}
+              <a
+                className={styles.contactBtn}
+                href="/curriculo-gervasio.pdf" 
+                download="Curriculo_Gervasio_Cardoso.pdf" 
+              >
+                {t("About.cv")}
               </a>
             </div>
           </motion.div>
