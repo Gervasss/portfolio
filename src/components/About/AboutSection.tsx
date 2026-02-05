@@ -52,7 +52,7 @@ export function AboutSection() {
               </div>
               <a
                 className={styles.contactBtn}
-                href="/curriculo-gervasio.pdf" 
+                href="/currículo_Gervásio_PT.pdf" 
                 download="Curriculo_Gervasio_Cardoso.pdf" 
               >
                 {t("About.cv")}
