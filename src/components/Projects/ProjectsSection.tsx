@@ -23,7 +23,7 @@ export default function ProjectsSection() {
       cover: "/adminJG.png",
       href: "https://admin-jg.vercel.app/",
       github: "https://github.com/Gervasss/Gerencia-JG-case-study",
-      tags: ["Next.js", "UI", "Docs", "Automação"],
+      tags: ["React", "UI", "Docs", "Automação", "typescript"],
     },
     {
       title: "Intranet Mercadótica",
@@ -31,7 +31,7 @@ export default function ProjectsSection() {
       cover: "/intranet.png",
       href: "https://intranetv2.mercadotica.com/",
       github: "https://github.com/Gervasss/intranet-mercadotica-case-study",
-      tags: ["React", "Docs", "Chat"],
+      tags: ["React", "Docs", "Chat","typescript", "API"],
     },
     {
       title: "My best Vision",
@@ -65,6 +65,14 @@ export default function ProjectsSection() {
       github: "https://github.com/Gervasss/moviedb",
       tags: ["Next", "SEO", "UI", "Profissional", "IA otimizada", "Server Components"],
     },
+     {
+      title: "Links Rápidos Lane Castro store",
+      description: t("Projects.items.links"),
+      cover: "/links.png",
+      href: "https://links.lanecastrostore.com.br/",
+      tags: ["Next", "SEO", "UI", "Profissional", "IA otimizada", "Server Components"],
+    },
+    
   ];
 
   return (
