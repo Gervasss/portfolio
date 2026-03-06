@@ -31,7 +31,7 @@ export default function ProjectsSection() {
       cover: "/intranet.png",
       href: "https://intranetv2.mercadotica.com/",
       github: "https://github.com/Gervasss/intranet-mercadotica-case-study",
-      tags: ["React", "Docs", "Chat","typescript", "API"],
+      tags: ["React", "Docs", "Chat", "typescript", "API"],
     },
     {
       title: "My best Vision",
@@ -54,7 +54,7 @@ export default function ProjectsSection() {
       description: t("Projects.items.psicologa"),
       cover: "/cris.png",
       href: "https://www.cristianepsi.com.br/",
-      github: "",
+      github: "https://github.com/Gervasss/crispsi-presentation",
       tags: ["Next", "SEO", "UI", "Profissional", "IA otimizada"],
     },
     {
@@ -65,14 +65,15 @@ export default function ProjectsSection() {
       github: "https://github.com/Gervasss/moviedb",
       tags: ["Next", "SEO", "UI", "Profissional", "IA otimizada", "Server Components"],
     },
-     {
+    {
       title: "Links Rápidos Lane Castro store",
       description: t("Projects.items.links"),
       cover: "/links.png",
       href: "https://links.lanecastrostore.com.br/",
+      github: "https://github.com/Gervasss/lane-store-presentation",
       tags: ["Next", "SEO", "UI", "Profissional", "IA otimizada", "Server Components"],
     },
-    
+
   ];
 
   return (
