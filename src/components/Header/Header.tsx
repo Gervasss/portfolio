@@ -23,8 +23,8 @@ export function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
-    // Configuração do WhatsApp para RB Engenharia
-    const phoneNumber = "5577981337664";
+    // Configuração do WhatsApp 
+    const phoneNumber = "5573981542775";
     // 3. Mensagem traduzida automaticamente via JSON
     const message = t("Header.whatsapp_message"); 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
