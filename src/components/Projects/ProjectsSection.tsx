@@ -15,7 +15,7 @@ export default function ProjectsSection() {
       cover: "/pousada.png",
       href: "https://admin.pousadaituadmin.com.br/",
       github: "https://github.com/Gervasss/Gerencia-pousada-case-study",
-      tags: ["React", "TypeScript", "API", "Dashboard"],
+      tags: ["React", "TypeScript", "API", "Dashboard","MySQL", "Automação"],
     },
     {
       title: "Admin JG",
@@ -31,7 +31,7 @@ export default function ProjectsSection() {
       cover: "/intranet.png",
       href: "https://intranetv2.mercadotica.com/",
       github: "https://github.com/Gervasss/intranet-mercadotica-case-study",
-      tags: ["React", "Docs", "Chat", "typescript", "API"],
+      tags: ["React", "Docs", "typescript", "API","Node", "Socket.io","PostgreQSL"],
     },
     {
       title: "My best Vision",
@@ -39,7 +39,7 @@ export default function ProjectsSection() {
       cover: "/mbv.png",
       href: "https://mbv.mercadotica.com/",
       github: "https://github.com/Gervasss/my-best-vision-case-study",
-      tags: ["React", "Docs", "UI", "Automação"],
+      tags: ["React", "Docs", "UI", "Automação","Firebase"],
     },
     {
       title: "Blog Mercadótica",
@@ -47,7 +47,7 @@ export default function ProjectsSection() {
       cover: "/blog.png",
       href: "https://blog.mercadotica.com/",
       github: "",
-      tags: ["React", "Docs", "UI", "Automação"],
+      tags: ["React", "Docs", "UI", "Automação","Firebase"],
     },
     {
       title: "Cristiane Psicóloga",
