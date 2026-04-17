@@ -9,21 +9,30 @@ export function ExperiencesSection() {
     const { t } = useLanguage();
 
     const EXPERIENCES = [
-        {
-            range: t("Experience.items.freelance.range"),
-            role: t("Experience.items.freelance.role"),
-            company: "Freelancer",
-            location: t("Experience.items.freelance.location"),
+         {
+            range: t("Experience.items.Grupo Fellow.range"),
+            role: t("Experience.items.Grupo Fellow.role"),
+            company: "Fellow",
+            location: t("Experience.items.Grupo Fellow.location"),
             isCurrent: true,
-            highlights: t("Experience.items.freelance.highlights") as unknown as string[],
+            highlights: t("Experience.items.Grupo Fellow.highlights") as unknown as string[],
             stack: ["Next.js", "React", "TypeScript", "Node.js", "PostgreSQL", "Firebase", "CSS Modules", "Styled Components"],
         },
         {
-            range: t("Experience.items.mercadotica.range"),
-            role: t("Experience.items.mercadotica.role"),
+            range: t("Experience.items.Freelance.range"),
+            role: t("Experience.items.Freelance.role"),
+            company: "Freelancer",
+            location: t("Experience.items.Freelance.location"),
+            isCurrent: true,
+            highlights: t("Experience.items.Freelance.highlights") as unknown as string[],
+            stack: ["Next.js", "React", "TypeScript", "Node.js", "PostgreSQL", "Firebase", "CSS Modules", "Styled Components"],
+        },
+        {
+            range: t("Experience.items.Mercadótica.range"),
+            role: t("Experience.items.Mercadótica.role"),
             company: "Mercadótica",
-            location: t("Experience.items.mercadotica.location"),
-            highlights: t("Experience.items.mercadotica.highlights") as unknown as string[],
+            location: t("Experience.items.Mercadótica.location"),
+            highlights: t("Experience.items.Mercadótica.highlights") as unknown as string[],
             stack: ["React", "TypeScript", "Vite", "CSS Modules", "Styled Components", "Websockets", "Postman", "Nodejs", "Firebase", "Prisma ORM", "PostgrSQL"],
         },
     ];

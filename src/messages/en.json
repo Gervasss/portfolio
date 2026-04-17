@@ -62,7 +62,19 @@
   "title": "Professional Experience",
   "subtitle": "A summary of what I've built and how I operate day-to-day, from product to delivery.",
   "items": {
-    "freelance": {
+    "Grupo Fellow": {
+      "range": "2026 — Present",
+      "role": "Full-Stack Developer",
+      "location": "Remote • Brazil",
+      "highlights": [
+        "Development and maintenance of a complex and scalable digital ecosystem at Grupo Fellow.",
+        "Creation of accessible interfaces focused on high performance and conversion rates.",
+        "Building optimized checkout screens and analytical dashboards using Next.js and React.",
+        "Integration of interfaces with .NET/C# microservices for transaction processing and payment splits.",
+        "Implementation of SSR and SSG to ensure instant loading in high-traffic scenarios."
+      ]
+    },
+    "Freelance": {
       "range": "2025 — Present",
       "role": "Full-Stack Developer",
       "location": "Remote • Brazil",
@@ -74,7 +86,7 @@
         "Creation of websites and landing pages for companies and professionals, focusing on responsiveness and SEO best practices."
       ]
     },
-    "mercadotica": {
+    "Mercadótica": {
       "range": "2023 — 2024",
       "role": "Full-Stack Developer Intern",
       "location": "Remote • Brazil",

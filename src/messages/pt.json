@@ -60,7 +60,19 @@
   "title": "Experiência profissional",
   "subtitle": "Um resumo do que eu já construí e como eu atuo no dia a dia, do produto à entrega.",
   "items": {
-    "freelance": {
+    "Grupo Fellow": {
+      "range": "2026 — Atual",
+      "role": "Desenvolvedor Full-Stack",
+      "location": "Remoto • Brasil",
+      "highlights": [
+        "Desenvolvimento e sustentação de um ecossistema digital complexo e escalável no Grupo Fellow.",
+        "Criação de interfaces acessíveis com foco em alta performance e taxas de conversão.",
+        "Construção de telas de checkout otimizadas e dashboards analíticos utilizando Next.js e React.",
+        "Integração de interfaces a microsserviços em .NET/C# para processamento de transações e split de pagamentos.",
+        "Implementação de SSR e SSG para assegurar carregamento instantâneo em cenários de alto tráfego."
+      ]
+    },
+    "Freelance": {
       "range": "2025 — Atual",
       "role": "Desenvolvedor Full-Stack",
       "location": "Remoto • Brasil",
@@ -72,7 +84,7 @@
         "Criação de sites e landing pages para empresas e profissionais, com foco em responsividade e nas melhores práticas de SEO."
       ]
     },
-    "mercadotica": {
+    "Mercadótica": {
       "range": "2023 — 2024",
       "role": "Estagiário - Desenvolvedor Full-Stack",
       "location": "Remoto • Brasil",
