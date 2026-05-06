@@ -2,17 +2,58 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
+import {
+  IconCode,
+  IconDownload,
+  IconMapPin,
+  IconRocket,
+  IconTargetArrow,
+} from "@tabler/icons-react";
 import styles from "./AboutSection.module.css";
-import { useLanguage } from "@/src/contexts/LanguageContext"; // Importação necessária
+import { useLanguage } from "@/src/contexts/LanguageContext";
 
-const STACK = ["React", "Next.js", "TypeScript", "Node.js", "PostgreSQL", "Prisma", "Firebase", "CSS"];
+const STACK = [
+  "React",
+  "Next.js",
+  "TypeScript",
+  "Node.js",
+  "PostgreSQL",
+  "Prisma",
+  "Firebase",
+  "CSS",
+];
+
+const highlights = [
+  { key: "deliver", Icon: IconRocket },
+  { key: "work", Icon: IconCode },
+  { key: "seek", Icon: IconTargetArrow },
+];
+
+const cvFiles = {
+  pt: {
+    href: "/CV_Gervasio_pt.pdf",
+    download: "Curriculo_Gervasio_Cardoso_pt.pdf",
+  },
+  en: {
+    href: "/CV_Gervasio_EN.pdf",
+    download: "Resume_Gervasio_Cardoso_EN.pdf",
+  },
+  es: {
+    href: "/CV_Gervasio_ES.pdf",
+    download: "Curriculum_Gervasio_Cardoso_ES.pdf",
+  },
+};
 
 export function AboutSection() {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
+  const currentCv = cvFiles[language];
 
   return (
     <section className={styles.section} id="about">
+      <div className={styles.bgGrid} />
+
       <div className={styles.container}>
+        {/* Cabeçalho da seção */}
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -20,7 +61,7 @@ export function AboutSection() {
           transition={{ duration: 0.55, ease: "easeOut" }}
           className={styles.header}
         >
-           <div className={styles.badge}>
+          <div className={styles.badge}>
             <span className={styles.badgeDot} />
             {t("About.badge")}
           </div>
@@ -29,80 +70,131 @@ export function AboutSection() {
         </motion.div>
 
         <div className={styles.grid}>
-          {/* Foto */}
-          <motion.div
-            initial={{ opacity: 0, x: -16 }}
+          {/* Card lateral com foto, currículo e dados rápidos */}
+          <motion.aside
+            initial={{ opacity: 0, x: -18 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className={styles.photoCard}
+            className={styles.profileCard}
           >
+            {/* Foto de perfil */}
             <div className={styles.photoWrap}>
-              <img
-                src="avatar.png" 
-                alt="Foto de Gervásio Cardoso"
+              <Image
+                src="/avatar.png"
+                alt={t("About.photo_alt")}
+                fill
+                sizes="(max-width: 768px) 100vw, 390px"
                 className={styles.photo}
+                priority={false}
               />
+              <div className={styles.photoShade} />
             </div>
 
-           <div className={styles.photoMeta}>
-              <div>
-                <p className={styles.name}>Gervásio Cardoso</p>
-                <p className={styles.role}>{t("About.role")}</p>
+            {/* Informações principais do perfil */}
+            <div className={styles.profileBody}>
+              <div className={styles.profileHead}>
+                <div>
+                  <p className={styles.name}>{t("About.name")}</p>
+                  <p className={styles.role}>{t("About.role")}</p>
+                </div>
+
+                {/* Baixar cv */}
+                <a
+                  className={styles.contactBtn}
+                  href={currentCv.href}
+                  download={currentCv.download}
+                  aria-label={t("About.cv")}
+                >
+                  <IconDownload size={18} />
+                </a>
               </div>
-              <a
-                className={styles.contactBtn}
-                href="/CV_Gervasio_PT.pdf" 
-                download="Curriculo_Gervasio_Cardoso.pdf" 
-              >
-                {t("About.cv")}
-              </a>
-            </div>
-          </motion.div>
 
-          {/* Texto + Highlights */}
+              {/* Base e disponibilidade */}
+              <div className={styles.profileMeta}>
+                <div>
+                  <span>{t("About.profile.location_label")}</span>
+                  <strong>
+                    <IconMapPin size={15} />
+                    {t("About.profile.location")}
+                  </strong>
+                </div>
+                <div>
+                  <span>{t("About.profile.availability_label")}</span>
+                  <strong>{t("About.profile.availability")}</strong>
+                </div>
+              </div>
+
+              {/* Métricas rápidas do perfil */}
+              <div className={styles.profileStats}>
+                <div>
+                  <strong>{t("About.profile.experience_value")}</strong>
+                  <span>{t("About.profile.experience_label")}</span>
+                </div>
+                <div>
+                  <strong>{t("About.profile.delivery_value")}</strong>
+                  <span>{t("About.profile.delivery_label")}</span>
+                </div>
+              </div>
+            </div>
+          </motion.aside>
+
+          {/* Conteúdo principal sobre experiência, forma de trabalho e stack */}
           <motion.div
-            initial={{ opacity: 0, x: 16 }}
+            initial={{ opacity: 0, x: 18 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             className={styles.content}
           >
-            <div className={styles.card}>
-              <p 
+            {/* Texto de apresentação */}
+            <div className={styles.storyCard}>
+              <p
                 className={styles.paragraph}
                 dangerouslySetInnerHTML={{ __html: t("About.p1") }}
               />
 
-              <p 
-                className={styles.paragraph} 
+              <p
+                className={styles.paragraph}
                 dangerouslySetInnerHTML={{ __html: t("About.p2") }}
               />
-
-              <div className={styles.highlights}>
-                <div className={styles.highlight}>
-                  <p className={styles.highlightTitle}>{t("About.highlights.deliver.title")}</p>
-                  <p className={styles.highlightText}>{t("About.highlights.deliver.text")}</p>
-                </div>
-
-                <div className={styles.highlight}>
-                  <p className={styles.highlightTitle}>{t("About.highlights.work.title")}</p>
-                  <p className={styles.highlightText}>{t("About.highlights.work.text")}</p>
-                </div>
-
-                <div className={styles.highlight}>
-                  <p className={styles.highlightTitle}>{t("About.highlights.seek.title")}</p>
-                  <p className={styles.highlightText}>{t("About.highlights.seek.text")}</p>
-                </div>
-              </div>
             </div>
 
+            {/* Destaques profissionais */}
+            <div className={styles.highlights}>
+              {highlights.map(({ key, Icon }, index) => (
+                <motion.div
+                  key={key}
+                  initial={{ opacity: 0, y: 14 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-80px" }}
+                  transition={{
+                    duration: 0.45,
+                    ease: "easeOut",
+                    delay: index * 0.08,
+                  }}
+                  className={styles.highlight}
+                >
+                  <span className={styles.highlightIcon}>
+                    <Icon size={18} />
+                  </span>
+                  <p className={styles.highlightTitle}>
+                    {t(`About.highlights.${key}.title`)}
+                  </p>
+                  <p className={styles.highlightText}>
+                    {t(`About.highlights.${key}.text`)}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+
+            {/* Stack principal */}
             <div className={styles.stackBlock}>
               <p className={styles.stackTitle}>{t("About.stack_title")}</p>
               <div className={styles.stack}>
-                {STACK.map((t) => (
-                  <span key={t} className={styles.chip}>
-                    {t}
+                {STACK.map((tech) => (
+                  <span key={tech} className={styles.chip}>
+                    {tech}
                   </span>
                 ))}
               </div>

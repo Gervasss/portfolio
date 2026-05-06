@@ -14,7 +14,25 @@
   },
   "Hero": {
     "badge": "Desenvolvedor Full-Stack",
+    "name": "Gervásio Cardoso",
+    "headline": {
+      "line1": "DESENVOLVEDOR",
+      "highlight": "FULL-STACK"
+    },
     "description": "Eu construo interfaces modernas e Aplicações robustas com foco em performance, DX e experiência do usuário. Projetos reais, código limpo e entrega rápida.",
+    "stats": {
+      "experience": { "value": "+2", "label": "anos de experiência" },
+      "projects": { "value": "+12", "label": "projetos entregues" },
+      "focus": { "value": "100%", "label": "foco em produto" },
+      "systems": { "value": "Web", "label": "apps e sistemas" }
+    },
+    "terminal": {
+      "file": "portfolio.tsx",
+      "stack_label": "stack",
+      "stack_value": "React / Next / Node",
+      "focus_label": "focus",
+      "focus_value": "UI, APIs, Performance"
+    },
     "buttons": {
       "github": "Ver GitHub",
       "whatsapp": "Falar no WhatsApp",
@@ -26,10 +44,22 @@
   },
   "About": {
     "badge": "Sobre mim",
+    "name": "Gervásio Cardoso",
+    "photo_alt": "Foto de Gervásio Cardoso",
     "title": "Quem eu sou e como eu trabalho",
     "subtitle": "Uma visão rápida do meu perfil como desenvolvedor, meu foco técnico e o tipo de produto que eu gosto de construir.",
     "role": "Desenvolvedor Full-Stack",
     "cv": "Baixar Currículo",
+    "profile": {
+      "location_label": "Base",
+      "location": "Vitória da Conquista, BA",
+      "availability_label": "Disponibilidade",
+      "availability": "Projetos remotos",
+      "experience_value": "+2",
+      "experience_label": "anos criando software",
+      "delivery_value": "Full",
+      "delivery_label": "produto, front e back"
+    },
     "p1": "Eu desenvolvo aplicações com foco em <strong>experiência do usuário</strong>, <strong>performance</strong> e <strong>código sustentável</strong>. Gosto de pegar um problema real e transformar em um produto com interface moderna e backend robusto.",
     "p2": "Atuo do <strong>front ao back</strong>: construindo telas, organizando componentes, integrando APIs, modelando banco e garantindo entregas bem definidas.",
     "highlights": {
@@ -48,6 +78,7 @@
       "uesb": {
         "period": "2019 — Atual",
         "degree": "Bacharelado em Ciência da Computação",
+        "institution": "Universidade Estadual do Sudoeste da Bahia (UESB)",
         "status": "Em andamento",
         "location": "Vitória da Conquista • Bahia",
         "description": "Ênfase em desenvolvimento de software, estruturas de dados, bancos de dados e arquitetura de sistemas."

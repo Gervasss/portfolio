@@ -253,15 +253,7 @@ export const NavbarLogo = () => {
     >
 
       <div className="flex items-center ml-4">
-        <span
-          className="
-    text-3xl font-black tracking-tight antialiased
-    bg-gradient-to-r from-[#10b981] via-[#22c55e] to-[#4ade80]
-    bg-clip-text text-transparent
-  "
-        >
-        &lt;/&gt;
-        </span>
+    
 
         <span
           className="

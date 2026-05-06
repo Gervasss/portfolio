@@ -14,7 +14,25 @@
   },
   "Hero": {
     "badge": "Desarrollador Full-Stack",
+    "name": "Gervásio Cardoso",
+    "headline": {
+      "line1": "DESARROLLADOR",
+      "highlight": "FULL-STACK"
+    },
     "description": "Construyo interfaces modernas y aplicaciones robustas centradas en el rendimiento, DX y la experiencia del usuario. Proyectos reales, código limpio y entrega rápida.",
+    "stats": {
+      "experience": { "value": "+2", "label": "años de experiencia" },
+      "projects": { "value": "+12", "label": "proyectos entregados" },
+      "focus": { "value": "100%", "label": "foco en producto" },
+      "systems": { "value": "Web", "label": "apps y sistemas" }
+    },
+    "terminal": {
+      "file": "portfolio.tsx",
+      "stack_label": "stack",
+      "stack_value": "React / Next / Node",
+      "focus_label": "focus",
+      "focus_value": "UI, APIs, Performance"
+    },
     "buttons": {
       "github": "Ver GitHub",
       "whatsapp": "Hablar por WhatsApp",
@@ -26,11 +44,23 @@
   },
   
   "About": {
+    "name": "Gervásio Cardoso",
+    "photo_alt": "Foto de Gervásio Cardoso",
     "badge": "Sobre mí",
     "title": "Quién soy y cómo trabajo",
     "subtitle": "Una visión rápida de mi perfil como desarrollador, mi enfoque técnico y el tipo de producto que me gusta construir.",
     "role": "Desarrollador Full-Stack",
     "cv": "Descargar CV",
+    "profile": {
+      "location_label": "Base",
+      "location": "Vitória da Conquista, BA",
+      "availability_label": "Disponibilidad",
+      "availability": "Proyectos remotos",
+      "experience_value": "+2",
+      "experience_label": "años creando software",
+      "delivery_value": "Full",
+      "delivery_label": "producto, front y back"
+    },
     "p1": "Desarrollo aplicaciones con un enfoque en la <strong>experiencia del usuario</strong>, el <strong>rendimiento</strong> y el <strong>código sostenible</strong>. Me gusta tomar un problema real y transformarlo en un producto con una interfaz moderna y un backend robusto.",
     "p2": "Actúo desde el <strong>front hasta el back</strong>: construyendo pantallas, organizando componentes, integrando APIs, modelando bases de datos y garantizando entregas bien definidas.",
     "highlights": {
@@ -58,6 +88,7 @@
       "uesb": {
         "period": "2019 — Actualidad",
         "degree": "Licenciatura en Ciencias de la Computación",
+        "institution": "Universidad Estatal del Sudoeste de Bahía (UESB)",
         "status": "En curso",
         "location": "Vitória da Conquista • Bahía",
         "description": "Énfasis en desarrollo de software, estructuras de datos, bases de datos y arquitectura de sistemas."

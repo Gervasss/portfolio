@@ -8,6 +8,7 @@ import { useLanguage } from "@/src/contexts/LanguageContext";
 export default function ProjectsSection() {
   const { t } = useLanguage();
 
+  // Projetos exibidos na grade
   const PROJECTS = [
     {
       title: "Pousada Itu Admin",
@@ -79,6 +80,7 @@ export default function ProjectsSection() {
   return (
     <section className={styles.section} id="projects" aria-label="Projetos">
       <div className={styles.container}>
+        {/* Cabecalho da secao */}
         <header className={styles.header}>
           <div className={styles.badge}>
             <span className={styles.badgeDot} />
@@ -89,9 +91,11 @@ export default function ProjectsSection() {
           <p className={styles.subtitle}>{t("Projects.subtitle")}</p>
         </header>
 
+        {/* Grade de projetos */}
         <div className={styles.grid}>
           {PROJECTS.map((p) => (
             <article key={p.title} className={styles.card}>
+              {/* Capa e atalho para repositorio */}
               <div className={styles.coverWrap}>
                 <img
                   src={p.cover}
@@ -115,6 +119,7 @@ export default function ProjectsSection() {
                 ) : null}
               </div>
 
+              {/* Conteudo do card */}
               <div className={styles.body}>
                 <h3 className={styles.cardTitle}>{p.title}</h3>
                 <p className={styles.cardDesc}>{p.description}</p>
@@ -129,6 +134,7 @@ export default function ProjectsSection() {
                   </div>
                 ) : null}
 
+                {/* Links de acao */}
                 <div className={styles.actions}>
                   <a
                     href={p.href}

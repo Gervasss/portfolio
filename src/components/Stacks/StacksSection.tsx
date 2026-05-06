@@ -8,6 +8,7 @@ import { useLanguage } from "@/src/contexts/LanguageContext";
 export default function StacksSection() {
     const { t } = useLanguage();
 
+    // Tecnologias exibidas na nuvem e na grade
     const stacks = [
         { name: "React", iconUrl: "https://cdn.simpleicons.org/react/61DAFB" },
         { name: "Next.js", iconUrl: "https://cdn.simpleicons.org/nextdotjs/FFFFFF" },
@@ -34,6 +35,7 @@ export default function StacksSection() {
     return (
         <section className={styles.section} id="stacks" aria-label="Stacks">
             <div className={styles.container}>
+                {/* Cabecalho da secao */}
                 <header className={styles.header}>
                     <div className={styles.badge}>
                         <span className={styles.badgeDot} />
@@ -46,10 +48,12 @@ export default function StacksSection() {
                     </p>
                 </header>
 
+                {/* Nuvem visual de tecnologias */}
                 <div className={styles.cloud}>
                     <IconCloud images={stacks.map((s) => s.iconUrl)} />
                 </div>
 
+                {/* Grade com stacks principais */}
                 <div className={styles.stacksGrid} role="list">
                     {stacks.map((s) => (
                         <div key={s.name} className={styles.stackCard} role="listitem">

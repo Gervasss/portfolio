@@ -15,7 +15,25 @@
   
   "Hero": {
     "badge": "Full-Stack Developer",
+    "name": "Gervásio Cardoso",
+    "headline": {
+      "line1": "FULL-STACK",
+      "highlight": "DEVELOPER"
+    },
     "description": "I build modern interfaces and robust applications with a focus on performance, DX, and user experience. Real projects, clean code, and fast delivery.",
+    "stats": {
+      "experience": { "value": "+2", "label": "years experience" },
+      "projects": { "value": "+12", "label": "delivered projects" },
+      "focus": { "value": "100%", "label": "product focus" },
+      "systems": { "value": "Web", "label": "apps and systems" }
+    },
+    "terminal": {
+      "file": "portfolio.tsx",
+      "stack_label": "stack",
+      "stack_value": "React / Next / Node",
+      "focus_label": "focus",
+      "focus_value": "UI, APIs, Performance"
+    },
     "buttons": {
       "github": "View GitHub",
       "whatsapp": "Talk on WhatsApp",
@@ -28,10 +46,22 @@
 },
   "About": {
     "badge": "About me",
+    "name": "Gervásio Cardoso",
+    "photo_alt": "Photo of Gervásio Cardoso",
     "title": "Who I am and how I work",
     "subtitle": "A quick overview of my developer profile, technical focus, and the kind of product I enjoy building.",
     "role": "Full-Stack Developer",
     "cv": "Download CV",
+    "profile": {
+      "location_label": "Base",
+      "location": "Vitória da Conquista, BA",
+      "availability_label": "Availability",
+      "availability": "Remote projects",
+      "experience_value": "+2",
+      "experience_label": "years building software",
+      "delivery_value": "Full",
+      "delivery_label": "product, front and back"
+    },
     "p1": "I develop applications focused on <strong>user experience</strong>, <strong>performance</strong>, and <strong>sustainable code</strong>. I enjoy taking a real problem and turning it into a product with a modern interface and robust backend.",
     "p2": "I work from <strong>front to back</strong>: building screens, organizing components, integrating APIs, modeling databases, and ensuring well-defined deliveries.",
     "highlights": {
@@ -51,6 +81,7 @@
       "uesb": {
         "period": "2019 — Present",
         "degree": "Bachelor of Computer Science",
+        "institution": "State University of Southwest Bahia (UESB)",
         "status": "In progress",
         "location": "Vitória da Conquista • Bahia",
         "description": "Emphasis on software development, data structures, databases, and systems architecture."

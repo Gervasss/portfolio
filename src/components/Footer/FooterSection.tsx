@@ -10,12 +10,15 @@ export default function FooterSection() {
     return (
         <section className={styles.section}>
             <footer className={styles.footer}>
+                {/* Efeitos visuais do footer */}
                 <div className={styles.glowWrap} aria-hidden="true">
                     <div className={styles.glowA} />
                     <div className={styles.glowB} />
                 </div>
 
+                {/* Conteudo principal do footer */}
                 <div className={styles.card}>
+                    {/* Marca, descricao e redes */}
                     <div className={styles.brandCol}>
                         <a href="#" className={styles.brand}>
                             <span className={styles.brandName}>Gervásio Cardoso</span>
@@ -55,6 +58,7 @@ export default function FooterSection() {
                         </div>
                     </div>
 
+                    {/* Navegacao do footer */}
                     <nav className={styles.nav}>
                         <div className={styles.navCol}>
                             <div className={styles.navTitle}>{t("Footer.titles.quick_links")}</div>
@@ -87,6 +91,7 @@ export default function FooterSection() {
                     </nav>
                 </div>
 
+                {/* Copyright */}
                 <div className={styles.copy}>
                     <span>{t("Footer.copyright")}</span>
                 </div>

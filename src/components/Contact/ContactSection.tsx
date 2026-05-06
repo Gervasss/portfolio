@@ -19,6 +19,8 @@ const CITY_QUERY = 'Vitória da Conquista - Bahia';
 
 export default function ContactSection() {
     const { t } = useLanguage();
+
+    // Estado do formulario de contato
     const [state, setState] = React.useState<FormState>({
         name: '',
         email: '',
@@ -28,6 +30,7 @@ export default function ContactSection() {
         submitted: false,
     });
 
+    // Atualiza campos e limpa erros conforme o usuario digita
     const handleChange =
         (key: keyof Pick<FormState, 'name' | 'email' | 'message'>) =>
             (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -40,6 +43,7 @@ export default function ContactSection() {
                 }));
             };
 
+    // Valida os campos obrigatorios antes do envio
     const validate = () => {
         const errors: Record<string, string> = {};
         if (!state.name.trim()) errors.name = t("Contact.errors.name");
@@ -51,6 +55,7 @@ export default function ContactSection() {
         return errors;
     };
 
+    // Monta a mensagem e abre o WhatsApp
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
 
@@ -91,6 +96,7 @@ export default function ContactSection() {
     return (
         <section className={styles.section} id="contact">
             <div className={styles.container}>
+                {/* Cabecalho da secao */}
                 <div className={styles.header}>
                     <div className={styles.badge}>
                         <span className={styles.badgeDot} />
@@ -100,7 +106,9 @@ export default function ContactSection() {
                     <p className={styles.subtitle}>{t("Contact.subtitle")}</p>
                 </div>
 
+                {/* Formulario e canais de contato */}
                 <div className={styles.grid}>
+                    {/* Formulario enviado para WhatsApp */}
                     <form className={styles.form} onSubmit={handleSubmit}>
                         <div className={styles.field}>
                             <label className={styles.label}>{t("Contact.form.name")}</label>
@@ -155,6 +163,7 @@ export default function ContactSection() {
                         )}
                     </form>
 
+                    {/* Informacoes e redes sociais */}
                     <div className={styles.side}>
                         <h3 className={styles.sideTitle}>{t("Contact.side.title")}</h3>
 

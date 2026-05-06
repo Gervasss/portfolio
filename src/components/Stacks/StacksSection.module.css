@@ -1,9 +1,27 @@
 .section {
+  position: relative;
+  overflow: hidden;
   padding: 100px 0;
-  background: #111111;
+  background:
+    radial-gradient(760px 420px at 76% 20%, rgba(50, 205, 50, 0.14), transparent 66%),
+    linear-gradient(135deg, #000000, #080808 58%, #111111);
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.12;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 78px 78px;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 82%, transparent 100%);
 }
 
 .container {
+  position: relative;
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 24px;
@@ -94,9 +112,10 @@
 
 .stackCard {
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  background: rgba(0, 0, 0, 0.28);
-  backdrop-filter: blur(14px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.035);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(14px) saturate(140%);
   padding: 12px;
 
@@ -108,9 +127,9 @@
 }
 
 .stackCard:hover {
-  transform: translateY(-2px);
-  background: rgba(0, 0, 0, 0.34);
-  border-color: rgba(255, 255, 255, 0.16);
+  transform: translateY(-3px);
+  border-color: rgba(50, 205, 50, 0.24);
+  background: rgba(255, 255, 255, 0.045);
 }
 
 .stackTop {

@@ -1,7 +1,24 @@
 
 .section{
-     background: #000000;
+     position: relative;
+     overflow: hidden;
+     background:
+        radial-gradient(760px 420px at 76% 20%, rgba(50, 205, 50, 0.14), transparent 66%),
+        linear-gradient(135deg, #000000, #080808 58%, #111111);
      margin-top: -40px;
+}
+
+.section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.12;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 78px 78px;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 82%, transparent 100%);
 }
 
 
