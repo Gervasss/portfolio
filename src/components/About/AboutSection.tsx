@@ -39,7 +39,7 @@ export function AboutSection() {
           >
             <div className={styles.photoWrap}>
               <img
-                src="https://i.imgur.com/9ZIIxPJ.jpeg" 
+                src="avatar.png" 
                 alt="Foto de Gervásio Cardoso"
                 className={styles.photo}
               />

@@ -83,7 +83,7 @@ export function WhatsAppFloat({
         >
           <div className={styles.header}>
             <div className={styles.profile}>
-              <img src="https://i.imgur.com/9ZIIxPJ.jpeg" alt={`Foto de ${name}`} className={styles.avatar} />
+              <img src="avatar.png" alt={`Foto de ${name}`} className={styles.avatar} />
               <div className={styles.meta}>
                 <div className={styles.name}>{name}</div>
                 <div className={styles.status}>

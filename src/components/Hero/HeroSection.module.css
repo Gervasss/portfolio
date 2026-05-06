@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     padding: 120px 0;
-    color: #eae6ff;
+    color: #ffffff;
  
 }
 
@@ -11,7 +11,7 @@
     position: absolute;
     inset: 0;
     z-index: -3;
-    background: linear-gradient(135deg, #380082, #200054 60%, #12002e);
+    background: linear-gradient(135deg, #000000, #080808 60%, #121212);
 }
 
 .bgRadialTop {
@@ -20,7 +20,7 @@
     z-index: -2;
     opacity: 0.25;
     background: radial-gradient(800px 500px at 50% 0%,
-            rgba(74, 0, 184, 0.55),
+            rgba(255, 255, 255, 0.05),
             transparent 60%);
 }
 
@@ -82,7 +82,7 @@
 }
 
 .tagMuted {
-    color: rgba(234, 230, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .tagAttr {
@@ -90,7 +90,7 @@
 }
 
 .tagValue {
-    color: rgba(234, 230, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .block {
@@ -125,7 +125,7 @@
     max-width: 640px;
     font-size: 1.05rem;
     line-height: 1.6;
-    color: rgba(234, 230, 255, 0.85);
+    color: rgba(255, 255, 255, 0.85);
 }
 
 /* Actions */
@@ -248,7 +248,7 @@
     background: rgba(0, 0, 0, 0.3);
     font-family: "JetBrains Mono", monospace;
     font-size: 12px;
-    color: rgba(234, 230, 255, 0.75);
+    color: rgba(255, 255, 255, 0.75);
     overflow-x: auto;
 }
 
@@ -266,7 +266,7 @@
     font-size: 12px;
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    color: rgba(234, 230, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 @media (max-width: 768px) {

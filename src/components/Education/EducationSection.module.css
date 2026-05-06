@@ -1,6 +1,6 @@
 .section {
     padding: 90px 0;
-    color: #f2efff;
+    color: #ffffff;
     position: relative;
 }
 
@@ -42,7 +42,7 @@
 
 .subtitle {
     margin-top: 12px;
-    color: rgba(242, 239, 255, 0.75);
+    color: rgba(255, 255, 255, 0.75);
     line-height: 1.6;
     font-size: 1.02rem;
 }
@@ -50,7 +50,7 @@
 .location {
   margin-left: 600px;
   font-size: 12px;
-  color: rgba(242, 239, 255, 0.62);
+  color: rgba(255, 255, 255, 0.62);
 }
 
 /* Timeline */
@@ -139,12 +139,12 @@
 .institution {
     margin: 4px 0 0;
     font-size: 0.98rem;
-    color: rgba(242, 239, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .description {
     margin-top: 10px;
-    color: rgba(242, 239, 255, 0.75);
+    color: rgba(255, 255, 255, 0.75);
     line-height: 1.6;
     font-size: 0.98rem;
 }

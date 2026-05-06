@@ -145,11 +145,11 @@
 }
 
 .Menuitem {
-    border: 1px solid #22c55e;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     background: linear-gradient(135deg,
-            rgb(56, 0, 130) 0%,
-            rgb(32, 0, 84) 55%,
-            rgb(18, 0, 46) 100%);
+            #000000 0%,
+            #080808 55%,
+            #111111 100%);
     margin-top: 30px;
 }
 

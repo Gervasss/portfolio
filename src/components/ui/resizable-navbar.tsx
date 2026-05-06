@@ -89,7 +89,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
     <motion.div
       animate={{
         backdropFilter: visible ? "blur(30px)" : "blur(0px)",
-        backgroundColor: visible ? "#12002e" : "rgba(0,0,0,0)",
+        backgroundColor: visible ? "#000000" : "rgba(0,0,0,0)",
         borderColor: visible ? "rgba(255,255,255,0.14)" : "rgba(255,255,255,0)",
         boxShadow: visible ? "0 14px 40px rgba(0,0,0,0.35)" : "none",
         width: visible ? "70%" : "100%",
@@ -132,8 +132,8 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
           onClick={onItemClick}
           className={cn(
             "relative px-2 py-2 transition-colors duration-300 rounded-full",
-            // cor padrão = limegreen | hover = roxo
-            "text-[limegreen] hover:text-[#380082] dark:text-[limegreen] dark:hover:text-[#380082]"
+            // cor padrão = limegreen | hover = branco suave
+            "text-[limegreen] hover:text-white dark:text-[limegreen] dark:hover:text-white"
           )}
           key={`link-${idx}`}
           href={item.link}
@@ -143,8 +143,8 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
               layoutId="hovered"
               className={cn(
                 "absolute inset-0 h-full w-full rounded-full transition-colors duration-300",
-                // pill no hover = roxo (como você pediu ao passar o mouse)
-                "bg-[#380082]"
+                // pill no hover em preto claro
+                "bg-[#111111]"
               )}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -181,7 +181,7 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
       }}
       className={cn(
         "relative z-50 mx-auto flex w-full max-w-[calc(100vw-2rem)] flex-col items-center justify-between bg-transparent px-6 py-2 lg:hidden",
-        visible && "bg-[#12002e] dark:bg-neutral-950/80",
+        visible && "bg-[#000000] dark:bg-neutral-950/80",
         className,
       )}
     >
