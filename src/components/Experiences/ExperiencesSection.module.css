@@ -1,0 +1,227 @@
+.section {
+  padding: 90px 0;
+  background: #111111;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* glow leve pra combinar com seu tema sem ficar igual ao hero */
+.section::before {
+  content: "";
+  position: absolute;
+  inset: -200px;
+  background:
+    radial-gradient(900px 500px at 18% 25%, rgba(255, 255, 255, 0.05), transparent 60%),
+    radial-gradient(800px 460px at 78% 45%, rgba(34, 197, 94, 0.22), transparent 65%);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.container {
+  position: relative;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.header {
+  max-width: 780px;
+  margin-bottom: 28px;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.badgeDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: limegreen;
+}
+
+
+.title {
+  margin: 0;
+  font-size: clamp(1.9rem, 3vw, 2.5rem);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.subtitle {
+  margin: 12px 0 0;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+  font-size: 1.02rem;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  display: grid;
+  gap: 16px;
+  padding-top: 10px;
+}
+
+.line {
+  position: absolute;
+  left: 18px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.14),
+    rgba(255, 255, 255, 0.06)
+  );
+  border-radius: 999px;
+}
+
+.item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 14px;
+}
+
+.markerWrap {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.marker {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.04);
+  z-index: 2;
+}
+
+.markerCurrent {
+  background: limegreen;
+  border-color: rgba(0, 0, 0, 0.18);
+  box-shadow: 0 0 0 6px rgba(50, 205, 50, 0.18);
+}
+
+.pulse {
+  position: absolute;
+  top: 12px;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: rgba(50, 205, 50, 0.18);
+  filter: blur(0.2px);
+  animation: pulse 1.6s ease-out infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.65); opacity: 0.85; }
+  70% { transform: scale(1.25); opacity: 0.15; }
+  100% { transform: scale(1.25); opacity: 0; }
+}
+
+/* Card */
+.card {
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 16px 16px 14px;
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.30);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.range {
+  display: inline-flex;
+  font-weight: 900;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(0, 0, 0, 0.18);
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.rangeCurrent {
+  border-color: rgba(50, 205, 50, 0.30);
+  background: rgba(50, 205, 50, 0.14);
+}
+
+.location {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.role {
+  margin: 12px 0 0;
+  font-size: 1.1rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.at {
+  opacity: 0.55;
+  font-weight: 800;
+}
+
+.company {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.list {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.6;
+}
+
+.li {
+  margin: 6px 0;
+}
+
+.stack {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(0, 0, 0, 0.18);
+  color: rgba(255, 255, 255, 0.80);
+}
+
+/* Mobile alinhamento da linha */
+@media (max-width: 768px) {
+  .line {
+    left: 14px;
+  }
+  .item {
+    grid-template-columns: 36px 1fr;
+  }
+}
