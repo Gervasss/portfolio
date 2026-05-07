@@ -2,7 +2,6 @@
 
 import { AboutSection } from "@/src/components/About/AboutSection";
 import ContacSection from "@/src/components/Contact/ContactSection";
-import { EducationSection } from "@/src/components/Education/educationSection";
 import { ExperiencesSection } from "@/src/components/Experiences/ExpericencesSection";
 import FooterSection from "@/src/components/Footer/FooterSection";
 import { Header } from "@/src/components/Header/Header";
@@ -13,6 +12,10 @@ import { WhatsAppFloat } from "@/src/components/WhatsappFloat/WhatsappFloat";
 import { LanguageProvider } from "@/src/contexts/LanguageContext";
 import Head from "next/head";
 import Script from "next/script";
+
+const SITE_URL = "https://gervasiocardoso.vercel.app/";
+const OG_IMAGE_URL = `${SITE_URL}/Capa.png`;
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 
 
@@ -45,11 +48,11 @@ function HomePage() {
                 <meta name="robots" content="index, follow" />
 
                 {/* Canonical – ajuste quando publicar */}
-                <link rel="canonical" href="https://www.gervasiocardoso.dev" />
+                <link rel="canonical" href={SITE_URL} />
 
                 {/* Open Graph – LinkedIn, WhatsApp, Facebook */}
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://www.gervasiocardoso.dev" />
+                <meta property="og:url" content={SITE_URL} />
                 <meta property="og:title" content="Gervásio Cardoso | Desenvolvedor Full-Stack" />
                 <meta
                     property="og:description"
@@ -57,8 +60,10 @@ function HomePage() {
                 />
                 <meta
                     property="og:image"
-                    content="https://www.gervasiocardoso.dev/og-image.png"
+                    content={OG_IMAGE_URL}
                 />
+                <meta property="og:image:secure_url" content={OG_IMAGE_URL} />
+                <meta property="og:image:type" content="image/png" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta
@@ -77,11 +82,11 @@ function HomePage() {
                 />
                 <meta
                     name="twitter:image"
-                    content="https://www.gervasiocardoso.dev/og-image.png"
+                    content={OG_IMAGE_URL}
                 />
 
                 {/* Favicon */}
-                <link rel="icon" type="image/png" href="/favicon.png" />
+                <link rel="icon" type="image/png" href="/logo_gc.png" />
 
                 {/* Viewport */}
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -96,9 +101,9 @@ function HomePage() {
                         "@context": "https://schema.org",
                         "@type": "EnergyService",
                         "name": "Gervásio Cardoso | Desenvolvedor Full-Stack",
-                        "image": "",
-                        "@id": "",
-                        "url": "",
+                        "image": OG_IMAGE_URL,
+                        "@id": SITE_URL,
+                        "url": SITE_URL,
                         "telephone": "73981542775",
                         "priceRange": "R$",
                         "address": {
@@ -142,7 +147,7 @@ function HomePage() {
                         "@type": "LocalBusiness",
                         "name": "Gervásio Cardoso | Desenvolvedor Full-Stack",
                         "description": "Desenvolvedor Web",
-                        "url": "",
+                        "url": SITE_URL,
                         "telephone": "73981542775",
                         "address": {
                             "@type": "PostalAddress",
@@ -171,8 +176,8 @@ function HomePage() {
                         "@type": "Person",
                         "name": "Gervásio Cardoso",
                         "jobTitle": "Desenvolvedor Web",
-                        "url": "",
-                        "image": "https://i.imgur.com/fWVL0DH.png",
+                        "url": SITE_URL,
+                        "image": OG_IMAGE_URL,
                         "address": {
                             "@type": "PostalAddress",
                             "addressLocality": "Vitória da Conquista",
@@ -213,23 +218,26 @@ function HomePage() {
                 }}
             />
 
-            {/* Google Analytics Script */}
-            <Script
-                strategy="afterInteractive"
-                src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
-            />
-            <Script
-                id="google-analytics"
-                strategy="afterInteractive"
-                dangerouslySetInnerHTML={{
-                    __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'GA_MEASUREMENT_ID');
-          `,
-                }}
-            />
+            {GA_MEASUREMENT_ID ? (
+                <>
+                    <Script
+                        strategy="afterInteractive"
+                        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+                    />
+                    <Script
+                        id="google-analytics"
+                        strategy="afterInteractive"
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag(){dataLayer.push(arguments);}
+                                gtag('js', new Date());
+                                gtag('config', '${GA_MEASUREMENT_ID}');
+                            `,
+                        }}
+                    />
+                </>
+            ) : null}
 
             {/* Conteúdo da página inicial */}
             <LanguageProvider>
