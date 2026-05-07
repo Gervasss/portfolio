@@ -14,7 +14,7 @@ import Head from "next/head";
 import Script from "next/script";
 
 const SITE_URL = "https://gervasiocardoso.vercel.app/";
-const OG_IMAGE_URL = `${SITE_URL}/Capa.png`;
+const OG_IMAGE_URL = `${SITE_URL}/bg.png`;
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 
