@@ -1,21 +1,30 @@
 
 
-import { AboutSection } from "@/src/components/About/AboutSection";
-import ContacSection from "@/src/components/Contact/ContactSection";
-import { ExperiencesSection } from "@/src/components/Experiences/ExpericencesSection";
-import FooterSection from "@/src/components/Footer/FooterSection";
 import { Header } from "@/src/components/Header/Header";
 import { HeroSection } from "@/src/components/Hero/HeroSection";
-import ProjectsSection from "@/src/components/Projects/ProjectsSection";
-import StacksSection from "@/src/components/Stacks/StacksSection";
-import { WhatsAppFloat } from "@/src/components/WhatsappFloat/WhatsappFloat";
 import { LanguageProvider } from "@/src/contexts/LanguageContext";
+import dynamic from "next/dynamic";
 import Head from "next/head";
 import Script from "next/script";
 
 const SITE_URL = "https://gervasiocardoso.vercel.app/";
 const OG_IMAGE_URL = `${SITE_URL}/bg.png`;
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+
+const AboutSection = dynamic(() =>
+    import("@/src/components/About/AboutSection").then((mod) => mod.AboutSection)
+);
+const ExperiencesSection = dynamic(() =>
+    import("@/src/components/Experiences/ExpericencesSection").then((mod) => mod.ExperiencesSection)
+);
+const StacksSection = dynamic(() => import("@/src/components/Stacks/StacksSection"));
+const ProjectsSection = dynamic(() => import("@/src/components/Projects/ProjectsSection"));
+const ContacSection = dynamic(() => import("@/src/components/Contact/ContactSection"));
+const FooterSection = dynamic(() => import("@/src/components/Footer/FooterSection"));
+const WhatsAppFloat = dynamic(() =>
+    import("@/src/components/WhatsappFloat/WhatsappFloat").then((mod) => mod.WhatsAppFloat),
+    { ssr: false }
+);
 
 
 

@@ -2,9 +2,9 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { IconBrandWhatsapp, IconSend, IconX } from "@tabler/icons-react";
-import { motion } from "framer-motion";
 import styles from "./WhatsappFloat.module.css";
 import { useLanguage } from "@/src/contexts/LanguageContext";
+import Image from "next/image";
 
 type Props = {
   phone: string;
@@ -30,7 +30,6 @@ export function WhatsAppFloat({
   useEffect(() => {
     if (!open) return;
 
-    setPhase("typing");
     const tTimer = window.setTimeout(() => {
       setPhase("message");
       window.setTimeout(() => inputRef.current?.focus(), 50);
@@ -83,7 +82,13 @@ export function WhatsAppFloat({
         >
           <div className={styles.header}>
             <div className={styles.profile}>
-              <img src="avatar.png" alt={`Foto de ${name}`} className={styles.avatar} />
+              <Image
+                src="/avatar.png"
+                alt={`Foto de ${name}`}
+                className={styles.avatar}
+                width={36}
+                height={36}
+              />
               <div className={styles.meta}>
                 <div className={styles.name}>{name}</div>
                 <div className={styles.status}>
@@ -151,17 +156,16 @@ export function WhatsAppFloat({
       <button
         type="button"
         className={`${styles.fab} ${open ? styles.fabActive : ""}`}
-        onClick={() => setOpen((v) => !v)}
+        onClick={() => {
+          if (!open) setPhase("typing");
+          setOpen((v) => !v);
+        }}
         aria-label={open ? "Fechar chat" : "Abrir chat"}
       >
         <span className={styles.pulse} aria-hidden="true" />
-        <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          className={styles.floatBadge}
-        >
+        <div className={styles.floatBadge}>
           !
-        </motion.div>
+        </div>
         <IconBrandWhatsapp size={38} />
       </button>
     </div>

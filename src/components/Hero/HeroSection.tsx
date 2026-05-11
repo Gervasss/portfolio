@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "motion/react";
 import {
   IconArrowRight,
   IconBrandGithub,
@@ -25,22 +24,12 @@ export function HeroSection() {
 
       <div className={styles.container}>
         {/* Conteudo principal da hero */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.55, ease: "easeOut" }}
-          className={styles.content}
-        >
+        <div className={styles.content}>
           {/* Badge de apresentacao */}
-          <motion.div
-            initial={{ opacity: 0, y: -8 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45, ease: "easeOut", delay: 0.1 }}
-            className={styles.badge}
-          >
+          <div className={styles.badge}>
             <span className={styles.badgeDot} />
             {t("Hero.badge")}
-          </motion.div>
+          </div>
 
           {/* Headline principal */}
           <h1 className={styles.title}>
@@ -83,33 +72,20 @@ export function HeroSection() {
           {/* Metricas de destaque */}
           <div className={styles.stats}>
             {statKeys.map((key, index) => (
-              <motion.div
+              <div
                 key={key}
-                initial={{ opacity: 0, y: 18, scale: 0.96 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                transition={{
-                  duration: 0.48,
-                  ease: "easeOut",
-                  delay: 0.42 + index * 0.08,
-                }}
-                whileHover={{ y: -4 }}
                 className={styles.stat}
+                style={{ animationDelay: `${0.18 + index * 0.06}s` }}
               >
                 <strong>{t(`Hero.stats.${key}.value`)}</strong>
                 <span>{t(`Hero.stats.${key}.label`)}</span>
-              </motion.div>
+              </div>
             ))}
           </div>
-        </motion.div>
+        </div>
 
         {/* Visual tecnico lateral */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.65, ease: "easeOut", delay: 0.1 }}
-          className={styles.visual}
-          aria-hidden="true"
-        >
+        <div className={styles.visual} aria-hidden="true">
           {/* Elemento grafico de fundo */}
           <div className={styles.orbit}>
             <span />
@@ -131,7 +107,7 @@ export function HeroSection() {
               <strong>{t("Hero.terminal.focus_value")}</strong>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

@@ -67,6 +67,7 @@
 .content {
   position: relative;
   z-index: 1;
+  animation: heroFadeUp 0.55s ease-out both;
 }
 
 .badge {
@@ -81,6 +82,7 @@
   color: rgba(255, 255, 255, 0.85);
   font-size: 12px;
   line-height: 1;
+  animation: heroFadeDown 0.45s ease-out 0.1s both;
 }
 
 .badgeDot {
@@ -249,6 +251,8 @@
   position: relative;
   padding: 2px 0 0;
   cursor: default;
+  animation: statIn 0.48s ease-out both;
+  transition: transform 180ms ease;
 }
 
 .stat::before {
@@ -267,6 +271,10 @@
   background: rgba(50, 205, 50, 0.8);
 }
 
+.stat:hover {
+  transform: translateY(-4px);
+}
+
 .stat:hover strong {
   color: #4ade80;
   text-shadow: 0 0 22px rgba(50, 205, 50, 0.28);
@@ -275,6 +283,51 @@
 .visual {
   position: relative;
   min-height: 520px;
+  animation: visualIn 0.65s ease-out 0.1s both;
+}
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroFadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes statIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes visualIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .orbit {

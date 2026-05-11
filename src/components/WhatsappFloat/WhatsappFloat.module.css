@@ -55,6 +55,12 @@
   display: grid;
   place-items: center;
   box-shadow: 0 4px 10px rgba(239, 68, 68, .4);
+  animation: badgeIn 0.2s ease-out both;
+}
+
+@keyframes badgeIn {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
 }
 /* ===== Panel ===== */
 .panel {

@@ -2,20 +2,17 @@
 import '@/src/styles/globals.css';
 import type { AppProps } from 'next/app';
 import dynamic from 'next/dynamic';
-import { MantineProvider, createTheme } from '@mantine/core';
 
 // carrega o efeito só no client (evita mismatch no SSR)
 const GradualBlur = dynamic(() => import('@/src/components/ui/GradualBlur'), {
   ssr: false,
 });
 
-const theme = createTheme({}); // personalize se quiser
-
 export default function App({ Component, pageProps }: AppProps) {
 
   
   return (
-    <MantineProvider theme={theme} defaultColorScheme="auto">
+    <>
       <Component {...pageProps} />
 
       {/* Smoke leve no BOTTOM */}
@@ -34,6 +31,6 @@ export default function App({ Component, pageProps }: AppProps) {
         opacity={1}
         animated={false}
       />
-    </MantineProvider>
+    </>
   );
 }

@@ -53,6 +53,7 @@ export function LanguageSelector() {
                 setOpen(false);
               }}
               role="option"
+              aria-selected={lang.code === language}
             >
               <span className={styles.langShort}>{lang.short}</span>
               <span className={styles.langLabel}>{lang.label}</span>

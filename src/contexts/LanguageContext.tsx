@@ -6,9 +6,10 @@ import pt from "@/src/messages/pt.json";
 import en from "@/src/messages/en.json";
 import es from "@/src/messages/es.json";
 
-const messages: Record<LanguageCode, any> = { pt, en, es };
-
 export type LanguageCode = "pt" | "en" | "es";
+type MessageNode = string | MessageNode[] | { [key: string]: MessageNode };
+
+const messages: Record<LanguageCode, MessageNode> = { pt, en, es };
 
 type LanguageContextType = {
   language: LanguageCode;
@@ -19,15 +20,14 @@ type LanguageContextType = {
 const LanguageContext = createContext<LanguageContextType | null>(null);
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguageState] = useState<LanguageCode>("pt");
+  const [language, setLanguageState] = useState<LanguageCode>(() => {
+    if (typeof window === "undefined") return "pt";
+    return (localStorage.getItem("language") as LanguageCode | null) ?? "pt";
+  });
 
   useEffect(() => {
-    const saved = localStorage.getItem("language") as LanguageCode | null;
-    if (saved) {
-      setLanguageState(saved);
-      document.documentElement.lang = saved;
-    }
-  }, []);
+    document.documentElement.lang = language;
+  }, [language]);
 
   const setLanguage = (lang: LanguageCode) => {
     setLanguageState(lang);
@@ -38,16 +38,16 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
  
   const t = (path: string): string => {
     const keys = path.split(".");
-    let result = messages[language];
+    let result: MessageNode | undefined = messages[language];
 
     for (const key of keys) {
-      if (result && result[key]) {
+      if (result && !Array.isArray(result) && typeof result === "object" && key in result) {
         result = result[key];
       } else {
         return path; // Retorna a própria chave se não encontrar a tradução
       }
     }
-    return result;
+    return typeof result === "string" ? result : path;
   };
 
   return (
