@@ -12,19 +12,17 @@ import { EducationSection } from "../Education/educationSection";
 import { useLanguage } from "@/src/contexts/LanguageContext";
 
 export function ExperiencesSection() {
-  const { t } = useLanguage();
+  const { t, tArray } = useLanguage();
 
   // Dados exibidos na timeline profissional
   const EXPERIENCES = [
     {
       range: t("Experience.items.Grupo Fellow.range"),
       role: t("Experience.items.Grupo Fellow.role"),
-      company: "Fellow",
+      company: "Grupo Fellow",
       location: t("Experience.items.Grupo Fellow.location"),
       isCurrent: true,
-      highlights: t(
-        "Experience.items.Grupo Fellow.highlights"
-      ) as unknown as string[],
+      highlights: tArray("Experience.items.Grupo Fellow.highlights"),
       stack: [
         "Next.js",
         "React",
@@ -42,9 +40,7 @@ export function ExperiencesSection() {
       company: "Freelancer",
       location: t("Experience.items.Freelance.location"),
       isCurrent: true,
-      highlights: t(
-        "Experience.items.Freelance.highlights"
-      ) as unknown as string[],
+      highlights: tArray("Experience.items.Freelance.highlights"),
       stack: [
         "Next.js",
         "React",
@@ -61,9 +57,7 @@ export function ExperiencesSection() {
       role: t("Experience.items.Mercadótica.role"),
       company: "Mercadótica",
       location: t("Experience.items.Mercadótica.location"),
-      highlights: t(
-        "Experience.items.Mercadótica.highlights"
-      ) as unknown as string[],
+      highlights: tArray("Experience.items.Mercadótica.highlights"),
       stack: [
         "React",
         "TypeScript",
