@@ -59,6 +59,7 @@ export default function StacksSection() {
                         <div key={s.name} className={styles.stackCard} role="listitem">
                             <div className={styles.stackTop}>
                                 <span className={styles.dot} aria-hidden="true" />
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img
                                     src={s.iconUrl}
                                     alt={s.name}

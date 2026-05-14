@@ -14,7 +14,6 @@ import {
 } from "@/src/components/ui/resizable-navbar";
 import styles from "./Header.module.css";
 import { Briefcase, Home, MessageSquare, UserCircle, } from "lucide-react";
-import { IoMdMailUnread } from "react-icons/io";
 import { LanguageSelector } from "../LanguageSelector/LanguageSelector";
 import { useLanguage } from "@/src/contexts/LanguageContext"; // 1. Importação necessária
 

@@ -4,6 +4,7 @@ import React from "react";
 import styles from "./ProjectsSection.module.css";
 import { IconBrandGithub, IconExternalLink } from "@tabler/icons-react";
 import { useLanguage } from "@/src/contexts/LanguageContext";
+import Image from "next/image";
 
 export default function ProjectsSection() {
   const { t } = useLanguage();
@@ -97,12 +98,13 @@ export default function ProjectsSection() {
             <article key={p.title} className={styles.card}>
               {/* Capa e atalho para repositorio */}
               <div className={styles.coverWrap}>
-                <img
+                <Image
                   src={p.cover}
                   alt={`Capa do projeto ${p.title}`}
                   className={styles.cover}
+                  fill
+                  sizes="(max-width: 680px) 100vw, (max-width: 1180px) 50vw, 33vw"
                   loading="lazy"
-                  decoding="async"
                 />
                 <div className={styles.coverOverlay} />
                 {p.github ? (
