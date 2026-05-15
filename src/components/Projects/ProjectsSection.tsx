@@ -22,7 +22,7 @@ export default function ProjectsSection() {
     {
       title: "Admin JG",
       description: t("Projects.items.admin_jg"),
-      cover: "/adminJG.png",
+      cover: "/jg.png",
       href: "https://admin-jg.vercel.app/",
       github: "https://github.com/Gervasss/Gerencia-JG-case-study",
       tags: ["React", "UI", "Docs", "Automação", "typescript"],
