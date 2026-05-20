@@ -31,7 +31,7 @@ const highlights = [
 
 const cvFiles = {
   pt: {
-    href: "/CV_Gervasio_pt.pdf",
+    href: "/CV_Gervasio_PT.pdf",
     download: "Curriculo_Gervasio_Cardoso_pt.pdf",
   },
   en: {
