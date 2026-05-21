@@ -62,7 +62,7 @@ export default function ProjectsSection() {
     {
       title: "Movies DB",
       description: t("Projects.items.movies"),
-      cover: "/movie.png",
+      cover: "/movies.png",
       href: "https://moviedb-sable.vercel.app/",
       github: "https://github.com/Gervasss/moviedb",
       tags: ["Next", "SEO", "UI", "Profissional", "IA otimizada", "Server Components"],
