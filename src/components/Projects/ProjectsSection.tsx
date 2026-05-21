@@ -75,6 +75,30 @@ export default function ProjectsSection() {
       github: "https://github.com/Gervasss/lane-store-presentation",
       tags: ["Next", "SEO", "UI", "Profissional", "IA otimizada", "Server Components"],
     },
+    {
+      title: "Links Rápidos Casa Jardine",
+      description: t("Projects.items.links_casa_jardine"),
+      cover: "/linkcasa.png",
+      href: "https://links.casajardineeventos.com.br/",
+      github: "https://github.com/Gervasss/links-casa-jardine-presentation",
+      tags: ["Next", "SEO", "UI", "Profissional", "Bio Link", "Performance"],
+    },
+    {
+      title: "Casa Jardine",
+      description: t("Projects.items.casa_jardine"),
+      cover: "/casaja.png",
+      href: "https://casajardineeventos.com.br/",
+      github: "https://github.com/Gervasss/casa-jardine-presentation",
+      tags: ["Next", "SEO", "UI", "Profissional", "Landing Page", "Performance"],
+    },
+    {
+      title: "Gestão Casa Jardine",
+      description: t("Projects.items.gestao_casa_jardine"),
+      cover: "/gestao.png",
+      href: "https://gestao.casajardineeventos.com.br/",
+      github: "",
+      tags: ["React", "TypeScript", "Dashboard", "Gestão", "API", "Performance", "Automação"],
+    },
 
   ];
 

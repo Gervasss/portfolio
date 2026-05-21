@@ -157,7 +157,10 @@
     "blog": "Company news portal for announcements of new franchisees, promotions, and advertising campaigns.",
     "psicologa": "Clearly presents the professional's skills, services, and educational background for clients.",
     "movies": "Film catalog explorer using a public API with an intuitive interface and attractive visual design.",
-        "links":"Customized Quick Links page (Bio Link) developed for the Lane Castro brand. This project focuses on accessibility and performance, seamlessly connecting the audience to sales channels and customer support."
+        "links":"Customized Quick Links page (Bio Link) developed for the Lane Castro brand. This project focuses on accessibility and performance, seamlessly connecting the audience to sales channels and customer support.",
+    "links_casa_jardine": "Customized quick links interface for Casa Jardine, connecting customers to key support, sales, and social channels.",
+    "casa_jardine": "Institutional website for Casa Jardine focused on brand presentation, visual experience, and quick access to main contact points.",
+    "gestao_casa_jardine": "Management system for Casa Jardine focused on operational control, event organization, and tracking essential information."
   }
 },
 "Contact": {

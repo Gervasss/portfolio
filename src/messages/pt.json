@@ -155,7 +155,10 @@
     "blog": "Divulgação de notícias, novos franqueados, promoções e campanhas publicitárias da empresa.",
     "psicologa": "Apresenta claramente as competências, serviços e formações da profissional para os clientes.",
     "movies": "Exploração de catálogo de filmes consumindo API pública com interface intuitiva e visual atrativo.",
-    "links":"Interface de links rápidos (Bio Link) customizada para a marca Lane Castro. O projeto foca em acessibilidade e rapidez, conectando o público diretamente aos canais de venda e atendimento."
+    "links":"Interface de links rápidos (Bio Link) customizada para a marca Lane Castro. O projeto foca em acessibilidade e rapidez, conectando o público diretamente aos canais de venda e atendimento.",
+    "links_casa_jardine": "Interface de links rápidos personalizada para a Casa Jardine, conectando clientes aos principais canais de atendimento, venda e redes sociais.",
+    "casa_jardine": "Site institucional da Casa Jardine com foco em apresentação da marca, experiência visual e acesso rápido aos principais pontos de contato.",
+    "gestao_casa_jardine": "Sistema de gestão para a Casa Jardine com foco em controle operacional, organização de eventos e acompanhamento de informações essenciais."
   }
 },
 "Contact": {
