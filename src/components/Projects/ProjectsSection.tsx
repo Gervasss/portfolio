@@ -12,6 +12,14 @@ export default function ProjectsSection() {
   // Projetos exibidos na grade
   const PROJECTS = [
     {
+      title: "Nathália de Paula",
+      description: t("Projects.items.nathalia_de_paula"),
+      cover: "/med.png",
+      href: "https://nathaliadepaula.vercel.app/",
+      github: "https://github.com/Gervasss/medinfocus-nathalia-case-study",
+      tags: ["React", "Vite", "CSS", "Firebase", "Firebase Auth", "TypeScript"],
+    },
+    {
       title: "Pousada Itu Admin",
       description: t("Projects.items.pousada"),
       cover: "/pousada.png",
@@ -161,18 +169,20 @@ export default function ProjectsSection() {
                 ) : null}
 
                 {/* Links de acao */}
-                <div className={styles.actions}>
-                  <a
-                    href={p.href}
-                    target={p.href.startsWith("http") ? "_blank" : undefined}
-                    rel={p.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    className={styles.primaryBtn}
-                  >
-                    {t("Projects.buttons.view_live")}
-                    <span className={styles.btnIcon}>
-                      <IconExternalLink size={16} />
-                    </span>
-                  </a>
+                {p.href || p.github ? <div className={styles.actions}>
+                  {p.href ? (
+                    <a
+                      href={p.href}
+                      target={p.href.startsWith("http") ? "_blank" : undefined}
+                      rel={p.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                      className={styles.primaryBtn}
+                    >
+                      {t("Projects.buttons.view_live")}
+                      <span className={styles.btnIcon}>
+                        <IconExternalLink size={16} />
+                      </span>
+                    </a>
+                  ) : null}
 
                   {p.github ? (
                     <a
@@ -187,7 +197,7 @@ export default function ProjectsSection() {
                       </span>
                     </a>
                   ) : null}
-                </div>
+                </div> : null}
               </div>
             </article>
           ))}

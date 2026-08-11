@@ -150,6 +150,7 @@
     "github": "GitHub"
   },
   "items": {
+    "nathalia_de_paula": "Academic content platform for medical students, with authenticated access and organized materials to support their studies.",
     "pousada": "Dashboard for managing reservations, consumption, and inventory. Focus on UX, performance, and operational flow.",
     "admin_jg": "Management Dashboard for clients, suppliers, sales, expenses, documents, and stock. Focus on UX, performance, and operational flow.",
     "intranet": "Platform for employees to receive company files, news, and direct chat support.",
