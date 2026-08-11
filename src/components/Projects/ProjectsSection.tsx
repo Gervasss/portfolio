@@ -17,7 +17,7 @@ export default function ProjectsSection() {
       cover: "/med.png",
       href: "https://nathaliadepaula.vercel.app/",
       github: "https://github.com/Gervasss/medinfocus-nathalia-case-study",
-      tags: ["React", "Vite", "CSS", "Firebase", "Firebase Auth", "TypeScript","testes unitários","testes de integração","CI/CD","vitest"],
+      tags: ["React", "Vite", "CSS", "Firebase", "TypeScript","testes unitários","testes de integração","CI/CD","vitest"],
     },
     {
       title: "Pousada Itu Admin",
