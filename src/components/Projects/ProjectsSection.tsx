@@ -17,7 +17,7 @@ export default function ProjectsSection() {
       cover: "/med.png",
       href: "https://nathaliadepaula.vercel.app/",
       github: "https://github.com/Gervasss/medinfocus-nathalia-case-study",
-      tags: ["React", "Vite", "CSS", "Firebase", "Firebase Auth", "TypeScript"],
+      tags: ["React", "Vite", "CSS", "Firebase", "Firebase Auth", "TypeScript","testes unitários","testes de integração","CI/CD","vitest"],
     },
     {
       title: "Pousada Itu Admin",
@@ -33,7 +33,7 @@ export default function ProjectsSection() {
       cover: "/jg.png",
       href: "https://admin-jg.vercel.app/",
       github: "https://github.com/Gervasss/Gerencia-JG-case-study",
-      tags: ["React", "UI", "Docs", "Automação", "typescript"],
+      tags: ["React", "UI", "Docs", "Automação", "typescript","testes unitários","CI/CD","jest"],
     },
     {
       title: "Intranet Mercadótica",
@@ -105,7 +105,7 @@ export default function ProjectsSection() {
       cover: "/gestao.png",
       href: "https://gestao.casajardineeventos.com.br/",
       github: "",
-      tags: ["React", "TypeScript", "Dashboard", "Gestão", "API", "Performance", "Automação"],
+      tags: ["React", "TypeScript", "Dashboard", "Gestão", "API", "Performance", "Automação","testes unitários","CI/CD","Vitest"],
     },
 
   ];
