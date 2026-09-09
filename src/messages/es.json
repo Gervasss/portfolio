@@ -21,7 +21,7 @@
     },
     "description": "Construyo interfaces modernas y aplicaciones robustas centradas en el rendimiento, DX y la experiencia del usuario. Proyectos reales, código limpio y entrega rápida.",
     "stats": {
-      "experience": { "value": "+2", "label": "años de experiencia" },
+      "experience": { "value": "+3", "label": "años de experiencia" },
       "projects": { "value": "+12", "label": "proyectos entregados" },
       "focus": { "value": "100%", "label": "foco en producto" },
       "systems": { "value": "Web", "label": "apps y sistemas" }
@@ -56,7 +56,7 @@
       "location": "Vitória da Conquista, BA",
       "availability_label": "Disponibilidad",
       "availability": "Proyectos remotos",
-      "experience_value": "+2",
+      "experience_value": "+3",
       "experience_label": "años creando software",
       "delivery_value": "Full",
       "delivery_label": "producto, front y back"
@@ -216,7 +216,10 @@
     "websites": "Sitios Web",
     "erps": "ERPs",
     "frontend": "Front-End",
-    "backend": "Back-End"
+    "backend": "Back-End",
+    "fullstack": "Full-Stack",
+    "product": "Producto",
+    "ui": "UI"
   },
   "copyright": "© 2025 @Gervásio Cardoso. Todos los derechos reservados."
 },

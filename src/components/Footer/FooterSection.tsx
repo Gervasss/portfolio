@@ -86,6 +86,9 @@ export default function FooterSection() {
                             <ul className={styles.navList}>
                                 <li><a href="#about" className={styles.navLink}>{t("Footer.links.frontend")}</a></li>
                                 <li><a href="#about" className={styles.navLink}>{t("Footer.links.backend")}</a></li>
+                                <li><a href="#about" className={styles.navLink}>{t("Footer.links.fullstack")}</a></li>
+                                <li><a href="#about" className={styles.navLink}>{t("Footer.links.product")}</a></li>
+                                <li><a href="#about" className={styles.navLink}>{t("Footer.links.ui")}</a></li>
                             </ul>
                         </div>
                     </nav>

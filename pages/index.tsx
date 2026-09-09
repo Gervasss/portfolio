@@ -258,11 +258,13 @@ function HomePage() {
                 <ProjectsSection />
                 <ContacSection />
                 <FooterSection />
-                <WhatsAppFloat
+
+                {/*<WhatsAppFloat
                     phone="5573981542775"
                     name="Gervásio Cardoso"
                     avatarUrl="/avatar.jpg"
-                />
+                />  */}
+                
             </LanguageProvider>
 
         </>

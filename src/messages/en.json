@@ -22,7 +22,7 @@
     },
     "description": "I build modern interfaces and robust applications with a focus on performance, DX, and user experience. Real projects, clean code, and fast delivery.",
     "stats": {
-      "experience": { "value": "+2", "label": "years experience" },
+      "experience": { "value": "+3", "label": "years experience" },
       "projects": { "value": "+12", "label": "delivered projects" },
       "focus": { "value": "100%", "label": "product focus" },
       "systems": { "value": "Web", "label": "apps and systems" }
@@ -57,7 +57,7 @@
       "location": "Vitória da Conquista, BA",
       "availability_label": "Availability",
       "availability": "Remote projects",
-      "experience_value": "+2",
+      "experience_value": "+3",
       "experience_label": "years building software",
       "delivery_value": "Full",
       "delivery_label": "product, front and back"
@@ -209,7 +209,10 @@
     "websites": "Websites",
     "erps": "ERPs",
     "frontend": "Front-End",
-    "backend": "Back-End"
+    "backend": "Back-End",
+    "fullstack": "Full-Stack",
+    "product": "Product",
+    "ui": "UI"
   },
   "copyright": "© 2025 @Gervásio Cardoso. All rights reserved."
 },
