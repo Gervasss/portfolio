@@ -3,7 +3,7 @@
   overflow: hidden;
   padding: 100px 0;
   background:
-    radial-gradient(760px 420px at 76% 20%, rgba(50, 205, 50, 0.14), transparent 66%),
+    radial-gradient(760px 420px at 76% 20%, rgba(var(--brand-accent-rgb), 0.14), transparent 66%),
     linear-gradient(135deg, #000000, #080808 58%, #111111);
 }
 
@@ -49,7 +49,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: limegreen;
+  background: var(--brand-accent);
 }
 
 .title {
@@ -128,7 +128,7 @@
 
 .stackCard:hover {
   transform: translateY(-3px);
-  border-color: rgba(50, 205, 50, 0.24);
+  border-color: rgba(var(--brand-accent-rgb), 0.24);
   background: rgba(255, 255, 255, 0.045);
 }
 

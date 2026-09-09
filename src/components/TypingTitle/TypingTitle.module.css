@@ -12,7 +12,7 @@
   width: 2px;
   height: 1em;
   margin-left: 4px;
-  background: limegreen;
+  background: var(--brand-accent);
   animation: blink 1s steps(1) infinite;
 }
 

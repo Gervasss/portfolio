@@ -26,8 +26,8 @@
   z-index: -3;
   opacity: 0.36;
   background:
-    linear-gradient(rgba(34, 197, 94, 0.13) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(34, 197, 94, 0.11) 1px, transparent 1px);
+    linear-gradient(rgba(var(--brand-accent-rgb), 0.13) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--brand-accent-rgb), 0.11) 1px, transparent 1px);
   background-size: 86px 86px;
   transform: perspective(700px) rotateX(62deg) translateY(-12%) scale(1.35);
   transform-origin: 50% 0;
@@ -37,7 +37,7 @@
 .bgGlow {
   z-index: -2;
   background:
-    radial-gradient(720px 420px at 74% 34%, rgba(50, 205, 50, 0.24), transparent 64%),
+    radial-gradient(720px 420px at 74% 34%, rgba(var(--brand-accent-rgb), 0.24), transparent 64%),
     radial-gradient(520px 320px at 24% 12%, rgba(255, 255, 255, 0.06), transparent 68%);
   opacity: 0.9;
 }
@@ -48,7 +48,7 @@
   background:
     radial-gradient(circle at 18% 28%, rgba(255, 255, 255, 0.22) 0 1px, transparent 2px),
     radial-gradient(circle at 76% 18%, rgba(255, 255, 255, 0.18) 0 1px, transparent 2px),
-    radial-gradient(circle at 86% 76%, rgba(50, 205, 50, 0.22) 0 1px, transparent 2px);
+    radial-gradient(circle at 86% 76%, rgba(var(--brand-accent-rgb), 0.22) 0 1px, transparent 2px);
   background-size: 240px 240px, 320px 320px, 280px 280px;
   filter: blur(0.2px);
 }
@@ -89,12 +89,12 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: limegreen;
+  background: var(--brand-accent);
 }
 
 .kicker {
   margin: 0 0 12px;
-  color: rgba(134, 239, 172, 0.94);
+  color: rgba(var(--brand-accent-soft-rgb), 0.94);
   font-size: 0.84rem;
   font-weight: 800;
   letter-spacing: 0.22em;
@@ -118,9 +118,9 @@
 }
 
 .title strong {
-  color: limegreen;
+  color: var(--brand-accent);
   font-weight: 950;
-  text-shadow: 0 0 34px rgba(50, 205, 50, 0.18);
+  text-shadow: 0 0 34px rgba(var(--brand-accent-rgb), 0.18);
 }
 
 .description {
@@ -140,7 +140,7 @@
   top: 0.28em;
   bottom: 0.28em;
   width: 1px;
-  background: linear-gradient(to bottom, limegreen, rgba(50, 205, 50, 0.08));
+  background: linear-gradient(to bottom, var(--brand-accent), rgba(var(--brand-accent-rgb), 0.08));
 }
 
 .actions {
@@ -174,10 +174,10 @@
 
 .whatsappBtn {
   padding: 0 28px;
-  background: limegreen;
-  color: #031006;
-  border: 1px solid limegreen;
-  box-shadow: 0 18px 44px rgba(50, 205, 50, 0.16);
+  background: var(--brand-accent);
+  color: var(--brand-accent-contrast);
+  border: 1px solid var(--brand-accent);
+  box-shadow: 0 18px 44px rgba(var(--brand-accent-rgb), 0.16);
 }
 
 .whatsappBtn:hover,
@@ -187,22 +187,22 @@
 }
 
 .whatsappBtn:hover {
-  background: #4ade80;
-  border-color: #4ade80;
+  background: var(--brand-accent-hover);
+  border-color: var(--brand-accent-hover);
 }
 
 .secondaryBtn {
   padding: 0 24px;
   color: rgba(255, 255, 255, 0.86);
-  border: 1px solid rgba(50, 205, 50, 0.38);
+  border: 1px solid rgba(var(--brand-accent-rgb), 0.38);
   background: rgba(0, 0, 0, 0.18);
 }
 
 .secondaryBtn:hover,
 .githubBtn:hover {
   color: #ffffff;
-  border-color: rgba(50, 205, 50, 0.72);
-  background: rgba(50, 205, 50, 0.1);
+  border-color: rgba(var(--brand-accent-rgb), 0.72);
+  background: rgba(var(--brand-accent-rgb), 0.1);
 }
 
 .githubBtn {
@@ -216,7 +216,7 @@
   width: min(100%, 840px);
   height: 1px;
   margin-top: 48px;
-  background: linear-gradient(90deg, rgba(50, 205, 50, 0.55), rgba(255, 255, 255, 0.08), transparent);
+  background: linear-gradient(90deg, rgba(var(--brand-accent-rgb), 0.55), rgba(255, 255, 255, 0.08), transparent);
 }
 
 .stats {
@@ -229,7 +229,7 @@
 
 .stat strong {
   display: block;
-  color: limegreen;
+  color: var(--brand-accent);
   font-size: clamp(1.45rem, 2vw, 2rem);
   line-height: 1;
   font-weight: 950;
@@ -262,13 +262,13 @@
   top: -10px;
   width: 28px;
   height: 1px;
-  background: rgba(50, 205, 50, 0);
+  background: rgba(var(--brand-accent-rgb), 0);
   transition: width 180ms ease, background 180ms ease;
 }
 
 .stat:hover::before {
   width: 44px;
-  background: rgba(50, 205, 50, 0.8);
+  background: rgba(var(--brand-accent-rgb), 0.8);
 }
 
 .stat:hover {
@@ -276,8 +276,8 @@
 }
 
 .stat:hover strong {
-  color: #4ade80;
-  text-shadow: 0 0 22px rgba(50, 205, 50, 0.28);
+  color: var(--brand-accent-hover);
+  text-shadow: 0 0 22px rgba(var(--brand-accent-rgb), 0.28);
 }
 
 .visual {
@@ -333,9 +333,9 @@
 .orbit {
   position: absolute;
   inset: 4% -20% 12% -18%;
-  border: 1px solid rgba(50, 205, 50, 0.14);
+  border: 1px solid rgba(var(--brand-accent-rgb), 0.14);
   background:
-    linear-gradient(120deg, transparent 12%, rgba(50, 205, 50, 0.08), transparent 44%),
+    linear-gradient(120deg, transparent 12%, rgba(var(--brand-accent-rgb), 0.08), transparent 44%),
     repeating-linear-gradient(135deg, transparent 0 22px, rgba(255, 255, 255, 0.035) 23px 24px);
   transform: skewY(-9deg);
   box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.72);
@@ -346,8 +346,8 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: rgba(134, 239, 172, 0.8);
-  box-shadow: 0 0 28px rgba(50, 205, 50, 0.9);
+  background: rgba(var(--brand-accent-soft-rgb), 0.8);
+  box-shadow: 0 0 28px rgba(var(--brand-accent-rgb), 0.9);
 }
 
 .orbit span:nth-child(1) {
@@ -399,7 +399,7 @@
 }
 
 .terminalLine span {
-  color: rgba(134, 239, 172, 0.8);
+  color: rgba(var(--brand-accent-soft-rgb), 0.8);
   font-size: 0.72rem;
 }
 

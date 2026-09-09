@@ -78,6 +78,13 @@ body {
 
 
 :root {
+  /* Cor de destaque do portfolio: altere estas variaveis para trocar o tema. */
+  --brand-accent: limegreen;
+  --brand-accent-hover: #4ade80;
+  --brand-accent-rgb: 50, 205, 50;
+  --brand-accent-soft-rgb: 134, 239, 172;
+  --brand-accent-contrast: #031006;
+
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);

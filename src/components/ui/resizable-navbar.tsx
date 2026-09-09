@@ -115,8 +115,8 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
           onClick={onItemClick}
           className={cn(
             "relative px-2 py-2 transition-colors duration-300 rounded-full",
-            // cor padrão = limegreen | hover = branco suave
-            "text-[limegreen] hover:text-white dark:text-[limegreen] dark:hover:text-white"
+            // cor de destaque global | hover = branco suave
+            "text-[var(--brand-accent)] hover:text-white dark:text-[var(--brand-accent)] dark:hover:text-white"
           )}
           key={`link-${idx}`}
           href={item.link}
@@ -208,9 +208,9 @@ export const MobileNavToggle = ({
   onClick: () => void;
 }) => {
   return isOpen ? (
-    <IconX className="text-[#22c55e] dark:text-white" onClick={onClick} />
+    <IconX className="text-[var(--brand-accent)] dark:text-white" onClick={onClick} />
   ) : (
-    <IconMenu2 className="text-[#22c55e] dark:text-white" onClick={onClick} />
+    <IconMenu2 className="text-[var(--brand-accent)] dark:text-white" onClick={onClick} />
   );
 };
 
@@ -234,7 +234,7 @@ export const NavbarLogo = () => {
         <span
           className="
     ml-1.5 text-2xl font-normal tracking-normal antialiased
-    bg-gradient-to-r from-[#22c55e] to-[#22c55e]
+    bg-gradient-to-r from-[var(--brand-accent)] to-[var(--brand-accent)]
     bg-clip-text text-transparent
   "
         >

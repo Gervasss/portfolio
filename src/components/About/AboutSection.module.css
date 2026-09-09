@@ -4,7 +4,7 @@
   padding: 110px 0;
   color: #ffffff;
   background:
-    radial-gradient(720px 420px at 78% 18%, rgba(50, 205, 50, 0.11), transparent 62%),
+    radial-gradient(720px 420px at 78% 18%, rgba(var(--brand-accent-rgb), 0.11), transparent 62%),
     linear-gradient(135deg, #000000, #070707 60%, #111111);
 }
 
@@ -48,7 +48,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: limegreen;
+  background: var(--brand-accent);
 }
 
 .title {
@@ -92,7 +92,7 @@
 .photoWrap {
   position: relative;
   height: 430px;
-  background: radial-gradient(500px 260px at 35% 18%, rgba(50, 205, 50, 0.15), transparent 65%);
+  background: radial-gradient(500px 260px at 35% 18%, rgba(var(--brand-accent-rgb), 0.15), transparent 65%);
 }
 
 .photo {
@@ -128,7 +128,7 @@
 
 .role {
   margin: 6px 0 0;
-  color: rgba(134, 239, 172, 0.88);
+  color: rgba(var(--brand-accent-soft-rgb), 0.88);
   font-size: 0.94rem;
   font-weight: 700;
 }
@@ -142,14 +142,14 @@
   justify-content: center;
   text-decoration: none;
   border-radius: 12px;
-  color: #031006;
-  background: limegreen;
+  color: var(--brand-accent-contrast);
+  background: var(--brand-accent);
   transition: transform 160ms ease, background 160ms ease;
 }
 
 .contactBtn:hover {
   transform: translateY(-2px);
-  background: #4ade80;
+  background: var(--brand-accent-hover);
 }
 
 .profileMeta {
@@ -195,13 +195,13 @@
   min-height: 96px;
   padding: 14px 12px;
   border-radius: 14px;
-  background: rgba(50, 205, 50, 0.1);
-  border: 1px solid rgba(50, 205, 50, 0.18);
+  background: rgba(var(--brand-accent-rgb), 0.1);
+  border: 1px solid rgba(var(--brand-accent-rgb), 0.18);
 }
 
 .profileStats strong {
   display: block;
-  color: limegreen;
+  color: var(--brand-accent);
   font-size: 1.55rem;
   line-height: 1;
   font-weight: 950;
@@ -234,7 +234,7 @@
   top: 26px;
   bottom: 26px;
   width: 2px;
-  background: linear-gradient(to bottom, limegreen, rgba(50, 205, 50, 0.08));
+  background: linear-gradient(to bottom, var(--brand-accent), rgba(var(--brand-accent-rgb), 0.08));
 }
 
 .paragraph {
@@ -268,7 +268,7 @@
 
 .highlight:hover {
   transform: translateY(-3px);
-  border-color: rgba(50, 205, 50, 0.28);
+  border-color: rgba(var(--brand-accent-rgb), 0.28);
   background: rgba(255, 255, 255, 0.045);
 }
 
@@ -279,9 +279,9 @@
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  color: limegreen;
-  background: rgba(50, 205, 50, 0.12);
-  border: 1px solid rgba(50, 205, 50, 0.16);
+  color: var(--brand-accent);
+  background: rgba(var(--brand-accent-rgb), 0.12);
+  border: 1px solid rgba(var(--brand-accent-rgb), 0.16);
 }
 
 .highlightTitle {

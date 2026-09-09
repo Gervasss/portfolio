@@ -4,7 +4,7 @@
   padding: 0 0 110px;
   color: #ffffff;
   background:
-    radial-gradient(800px 460px at 78% 48%, rgba(50, 205, 50, 0.17), transparent 66%),
+    radial-gradient(800px 460px at 78% 48%, rgba(var(--brand-accent-rgb), 0.17), transparent 66%),
     linear-gradient(135deg, #000000, #080808 56%, #111111);
 }
 
@@ -49,7 +49,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: limegreen;
+  background: var(--brand-accent);
 }
 
 .title {
@@ -80,7 +80,7 @@
   top: 0;
   bottom: 0;
   width: 1px;
-  background: linear-gradient(to bottom, rgba(50, 205, 50, 0.08), rgba(50, 205, 50, 0.46), rgba(255, 255, 255, 0.06));
+  background: linear-gradient(to bottom, rgba(var(--brand-accent-rgb), 0.08), rgba(var(--brand-accent-rgb), 0.46), rgba(255, 255, 255, 0.06));
   border-radius: 999px;
 }
 
@@ -114,10 +114,10 @@
 }
 
 .markerCurrent {
-  color: #031006;
-  background: limegreen;
+  color: var(--brand-accent-contrast);
+  background: var(--brand-accent);
   border-color: rgba(0, 0, 0, 0.18);
-  box-shadow: 0 0 0 8px rgba(50, 205, 50, 0.14);
+  box-shadow: 0 0 0 8px rgba(var(--brand-accent-rgb), 0.14);
 }
 
 .pulse {
@@ -126,7 +126,7 @@
   width: 34px;
   height: 34px;
   border-radius: 999px;
-  background: rgba(50, 205, 50, 0.18);
+  background: rgba(var(--brand-accent-rgb), 0.18);
   animation: pulse 1.8s ease-out infinite;
 }
 
@@ -162,12 +162,12 @@
   position: absolute;
   inset: 0 auto 0 0;
   width: 2px;
-  background: linear-gradient(to bottom, limegreen, rgba(50, 205, 50, 0.06));
+  background: linear-gradient(to bottom, var(--brand-accent), rgba(var(--brand-accent-rgb), 0.06));
 }
 
 .card:hover {
   transform: translateY(-3px);
-  border-color: rgba(50, 205, 50, 0.24);
+  border-color: rgba(var(--brand-accent-rgb), 0.24);
   background: rgba(255, 255, 255, 0.045);
 }
 
@@ -204,9 +204,9 @@
 }
 
 .rangeCurrent {
-  color: rgba(50, 205, 50, 0.96);
-  border-color: rgba(50, 205, 50, 0.26);
-  background: rgba(50, 205, 50, 0.12);
+  color: rgba(var(--brand-accent-rgb), 0.96);
+  border-color: rgba(var(--brand-accent-rgb), 0.26);
+  background: rgba(var(--brand-accent-rgb), 0.12);
 }
 
 .location {
@@ -225,7 +225,7 @@
 }
 
 .company {
-  color: rgba(134, 239, 172, 0.88);
+  color: rgba(var(--brand-accent-soft-rgb), 0.88);
   font-size: 0.86rem;
   font-weight: 900;
   letter-spacing: 0.16em;
@@ -251,7 +251,7 @@
 
 .li svg {
   margin-top: 4px;
-  color: limegreen;
+  color: var(--brand-accent);
 }
 
 .stack {
@@ -277,7 +277,7 @@
 }
 
 .chip svg {
-  color: rgba(50, 205, 50, 0.9);
+  color: rgba(var(--brand-accent-rgb), 0.9);
 }
 
 @media (max-width: 768px) {
