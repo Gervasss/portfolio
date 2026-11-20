@@ -22,7 +22,7 @@ export default function ProjectsSection() {
     {
       title: "SensoLaudos",
       description: t("Projects.items.sensolaudos"),
-      cover: "/senso.png",
+      cover: "/senso1.png",
       href: "https://www.sensolaudos.com.br/",
       github: "https://github.com/Gervasss/Vendas-laudo-Case-study/tree/main",
       tags: ["Next.js", "React", "TypeScript", "CSS", "Stripe"],
