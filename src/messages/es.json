@@ -168,7 +168,9 @@
     "links":"Página de enlaces rápidos (Bio Link) personalizada para la marca Lane Castro. El proyecto se centra en la accesibilidad y la rapidez, conectando directamente al público con los canales de venta y atención al cliente.",
     "links_casa_jardine": "Interfaz de enlaces rápidos personalizada para Casa Jardine, conectando a los clientes con los principales canales de atención, venta y redes sociales.",
     "casa_jardine": "Sitio institucional de Casa Jardine enfocado en la presentación de la marca, la experiencia visual y el acceso rápido a los principales puntos de contacto.",
-    "gestao_casa_jardine": "Sistema de gestión para Casa Jardine enfocado en el control operativo, la organización de eventos y el seguimiento de información esencial."
+    "gestao_casa_jardine": "Sistema de gestión para Casa Jardine enfocado en el control operativo, la organización de eventos y el seguimiento de información esencial.",
+    "sensolaudos": "Landing page de ventas de SensoLaudos, desarrollada con Next.js, React y TypeScript para presentar la plataforma a profesionales de psicología y neuropsicología. Reúne demostraciones del producto, funcionalidades, pruebas disponibles y paquetes de créditos, con un recorrido hacia la prueba gratuita y la compra con integración de Stripe.",
+    "sensolaudos_app": "Plataforma para profesionales de psicología y neuropsicología que permite organizar evaluaciones y elaborar informes neuropsicológicos. Integra anamnesis, pruebas, gráficos de resultados y asistencia de IA para la redacción, además de contratos, documentos y exportación a Word. Desarrollada con React, TypeScript y Firebase, con API en Node.js y pruebas automatizadas con Jest."
   }
 },
 "Contact": {

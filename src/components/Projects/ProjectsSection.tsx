@@ -12,12 +12,20 @@ export default function ProjectsSection() {
   // Projetos exibidos na grade
   const PROJECTS = [
     {
-      title: "Nathália de Paula",
-      description: t("Projects.items.nathalia_de_paula"),
-      cover: "/med.png",
-      href: "https://nathaliadepaula.vercel.app/",
-      github: "https://github.com/Gervasss/medinfocus-nathalia-case-study",
-      tags: ["React", "Vite", "CSS", "Firebase", "TypeScript","testes unitários","testes de integração","CI/CD","vitest"],
+      title: "SensoLaudos App",
+      description: t("Projects.items.sensolaudos_app"),
+      cover: "/appsenso.png",
+      href: "https://app.sensolaudos.com.br/login",
+      github: "",
+      tags: ["React", "TypeScript", "Firebase", "Node.js", "DOCX", "Jest"],
+    },
+    {
+      title: "SensoLaudos",
+      description: t("Projects.items.sensolaudos"),
+      cover: "/senso.png",
+      href: "https://www.sensolaudos.com.br/",
+      github: "https://github.com/Gervasss/Vendas-laudo-Case-study/tree/main",
+      tags: ["Next.js", "React", "TypeScript", "CSS", "Stripe"],
     },
     {
       title: "Pousada Itu Admin",
@@ -26,14 +34,6 @@ export default function ProjectsSection() {
       href: "https://admin.pousadaituadmin.com.br/",
       github: "https://github.com/Gervasss/Gerencia-pousada-case-study",
       tags: ["React", "TypeScript", "API", "Dashboard","MySQL", "Automação"],
-    },
-    {
-      title: "Admin JG",
-      description: t("Projects.items.admin_jg"),
-      cover: "/jg.png",
-      href: "https://admin-jg.vercel.app/",
-      github: "https://github.com/Gervasss/Gerencia-JG-case-study",
-      tags: ["React", "UI", "Docs", "Automação", "typescript","testes unitários","CI/CD","jest"],
     },
     {
       title: "Intranet Mercadótica",
@@ -66,14 +66,6 @@ export default function ProjectsSection() {
       href: "https://www.cristianepsi.com.br/",
       github: "https://github.com/Gervasss/crispsi-presentation",
       tags: ["Next", "SEO", "UI", "Profissional", "IA otimizada"],
-    },
-    {
-      title: "Movies DB",
-      description: t("Projects.items.movies"),
-      cover: "/movies.png",
-      href: "https://moviedb-sable.vercel.app/",
-      github: "https://github.com/Gervasss/moviedb",
-      tags: ["Next", "SEO", "UI", "Profissional", "IA otimizada", "Server Components"],
     },
     {
       title: "Links Rápidos Lane Castro store",
